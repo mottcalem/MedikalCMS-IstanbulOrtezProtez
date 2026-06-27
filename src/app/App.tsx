@@ -471,8 +471,8 @@ function Hero() {
             <div className="relative w-full max-w-[440px]">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
                 <img
-                  src="/hero-foot-analysis.jpg"
-                  alt="Ayak analizi yapılan hasta"
+                  src="/hero-prosthetic.jpg"
+                  alt="Ortez protez hasta uygulaması"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(18,59,109,0.4), transparent)" }} />
