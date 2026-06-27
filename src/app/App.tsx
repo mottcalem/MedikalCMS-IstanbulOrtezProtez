@@ -413,7 +413,7 @@ function Hero() {
           <div>
             <div className="inline-flex items-center gap-2 border text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-8" style={{ background: "rgba(10,173,168,0.18)", color: "#0AADA8", borderColor: "rgba(10,173,168,0.35)" }}>
               <CheckCircle className="w-3.5 h-3.5" />
-              SGK Anlaşmalı · İstanbul
+              SGK Anlaşmalı · Kütahya
             </div>
 
             <h1
@@ -528,10 +528,10 @@ function About() {
               className="text-3xl sm:text-4xl font-extrabold text-foreground leading-tight mb-5"
               style={{ fontFamily: "Manrope, sans-serif" }}
             >
-              İstanbul'un Güvenilir Ortez & Protez Merkezi
+              Kütahya'nın Güvenilir Ortez & Protez Merkezi
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-5">
-              2009 yılından bu yana İstanbul'da hizmet veren merkezimiz, sertifikalı uzman kadrosu ve son teknoloji altyapısıyla 2500'den fazla hastaya kişiye özel çözümler sunmuştur.
+              2009 yılından bu yana Kütahya'da hizmet veren merkezimiz, sertifikalı uzman kadrosu ve son teknoloji altyapısıyla 2500'den fazla hastaya kişiye özel çözümler sunmuştur.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               SGK anlaşmalı kurumumuzda alt ve üst ekstremite protezleri, çeşitli ortez sistemleri ve rehabilitasyon hizmetleri kapsamlı bir bütünlük içinde sunulmaktadır. Her hasta için bütünsel bir yaklaşım benimseyerek, en uygun çözümü birlikte planlıyoruz.
@@ -660,7 +660,7 @@ function WhyUs() {
         <SectionHeading
           badge="Neden Biz?"
           title="Farkımızı Hissedeceksiniz"
-          subtitle="İstanbul Ortez & Protez Merkezi olarak hasta odaklı yaklaşımımız ve teknik üstünlüğümüzle ayrışıyoruz."
+          subtitle="İstanbul Ortez Protez olarak hasta odaklı yaklaşımımız ve teknik üstünlüğümüzle ayrışıyoruz."
         />
         <div ref={ref} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {WHY_US.map((item, i) => {
@@ -1147,7 +1147,7 @@ function Footer() {
               <img src="/logo.svg" alt="İstanbul Ortez Protez" className="h-16 w-auto" style={{ filter: "brightness(0) invert(1)" }} />
             </div>
             <p className="text-sm leading-relaxed mb-6" style={{ color: "rgba(255,255,255,0.52)" }}>
-              15 yılı aşkın deneyimimizle İstanbul'un lider ortez ve protez merkezi olarak, her hastamıza kişiye özel çözümler sunuyoruz.
+              15 yılı aşkın deneyimimizle Kütahya'nın lider ortez ve protez merkezi olarak, her hastamıza kişiye özel çözümler sunuyoruz.
             </p>
             <div className="flex gap-2.5">
               {[
@@ -1269,10 +1269,10 @@ function Footer() {
           style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
         >
           <p className="text-xs" style={{ color: "rgba(255,255,255,0.32)" }}>
-            © 2025 OrtezProtez İstanbul Merkezi. Tüm hakları saklıdır.
+            © 2025 İstanbul Ortez Protez. Tüm hakları saklıdır.
           </p>
           <p className="text-[11px]" style={{ color: "rgba(255,255,255,0.22)" }}>
-            Schema.org MedicalOrganization · TR · İstanbul
+            Schema.org MedicalOrganization · TR · Kütahya
           </p>
         </div>
       </div>
@@ -1322,8 +1322,8 @@ export default function App() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "MedicalOrganization",
-            name: "OrtezProtez İstanbul Merkezi",
-            description: "İstanbul'da kişiye özel ortez ve protez çözümleri sunan SGK anlaşmalı merkez.",
+            name: "İstanbul Ortez Protez",
+            description: "Kütahya'da kişiye özel ortez ve protez çözümleri sunan SGK anlaşmalı merkez.",
             url: "https://ortezprotez.com",
             telephone: "+90-274-226-07-17",
             address: {
