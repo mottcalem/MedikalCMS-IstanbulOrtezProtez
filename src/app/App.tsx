@@ -13,6 +13,7 @@ const NAV_LINKS = [
   { label: "Anasayfa", href: "#anasayfa" },
   { label: "Hakkımızda", href: "#hakkimizda" },
   { label: "Hizmetlerimiz", href: "#hizmetler" },
+  { label: "FootBalance", href: "#footbalance" },
   { label: "Neden Biz?", href: "#neden-biz" },
   { label: "Hasta Hikayeleri", href: "#yorumlar" },
   { label: "Blog", href: "#blog" },
@@ -77,6 +78,17 @@ const SERVICE_CATEGORIES = [
       { title: "Tamir", desc: "Hızlı ve güvenilir protez tamir ve yenileme hizmetleri.", icon: Settings },
       { title: "Soket Yenileme", desc: "Değişen vücut yapısına uygun soket yenileme işlemleri.", icon: RefreshCw },
       { title: "Periyodik Kontrol", desc: "Ücretsiz periyodik kontrol ve ayarlama hizmetleri.", icon: CheckCircle },
+    ],
+  },
+  {
+    id: "footbalance",
+    label: "FootBalance® Tabanlık",
+    icon: Scan,
+    items: [
+      { title: "Ayak & Basış Analizi", desc: "Patentli FootBalance teknolojisiyle kapsamlı ayak ve yürüyüş analizi.", icon: Scan },
+      { title: "%100 Kişiye Özel Tabanlık", desc: "10 dakikada şekillendirilen, her ayakkabıya uyum sağlayan ortopedik tabanlık.", icon: Activity },
+      { title: "Spor Performans Tabanlığı", desc: "Spor performansını artırır, yaralanma ve sakatlık riskini azaltır.", icon: Dumbbell },
+      { title: "Çocuk & Büyüme Tabanlığı", desc: "Çocukların gelişimine uygun, büyüme dönemini destekleyen kişiye özel tabanlıklar.", icon: Baby },
     ],
   },
 ];
@@ -639,6 +651,101 @@ function Services() {
               </div>
             );
           })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── FootBalance ──────────────────────────────────────────────────────────────
+
+const FB_BENEFITS = [
+  { icon: Activity, title: "Sağlıklı & Dengeli Basış", desc: "Sağlıklı, doğru ve dengeli basmanıza yardımcı olur; ayak, diz ve sırt ağrılarını azaltır." },
+  { icon: Zap, title: "10 Dakikada Hazır", desc: "Kullanmak için beklemek gerekmez. Seans sonunda hemen ayakkabınıza takabilirsiniz." },
+  { icon: Heart, title: "Her Ayakkabıya Uyum", desc: "Her ayakkabı ile mükemmel uyum sağlar ve sıradan ayakkabınızı ortopedik ayakkabıya dönüştürür." },
+  { icon: Dumbbell, title: "Spor Performansı", desc: "Spor ve sporcunun performansını destekler, yaralanma riskini önemli ölçüde azaltır." },
+];
+
+const FB_PROCESS = [
+  { n: 1, title: "Kapsamlı Ayak & Basış Analizi", desc: "Patentli FootBalance teknolojisiyle ayaklarınızın ve basış biçiminizin detaylı analizi yapılır." },
+  { n: 2, title: "Detaylı Kişisel Rapor", desc: "Ayak yapınız ve yürüyüş biçiminize özel, uzman tarafından hazırlanan kişisel raporunuz sunulur." },
+  { n: 3, title: "Uzman Görüşü & Çözüm Önerisi", desc: "Ortez-protez uzmanımız size en uygun tabanlık tipini ve çözümü belirler." },
+  { n: 4, title: "Hemen Kullanıma Hazır Tabanlık", desc: "%100 kişiye özel tabanlığınız 10 dakikada şekillendirilir; seans biter bitmez kullanmaya başlarsınız." },
+];
+
+function FootBalance() {
+  return (
+    <section id="footbalance" className="py-24 bg-secondary/40">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeading
+          badge="FootBalance® Yetkili Merkezi"
+          title="10 Dakikada %100 Kişiye Özel Ortopedik Tabanlık"
+          subtitle="Kütahya'nın FootBalance yetkili merkezi olarak patentli teknoloji ile ayak analizinizi yapıyor, anında şekillendirdiğimiz kişisel tabanlıkla konfor ve sağlığı ayağınıza getiriyoruz."
+        />
+
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          {/* Faydalar */}
+          <div>
+            <h3 className="text-xl font-extrabold text-foreground mb-6" style={{ fontFamily: "Manrope, sans-serif" }}>
+              FootBalance Tabanlığın Faydaları
+            </h3>
+            <div className="space-y-4">
+              {FB_BENEFITS.map((b) => {
+                const Icon = b.icon;
+                return (
+                  <div key={b.title} className="flex items-start gap-4 bg-white rounded-2xl p-5 border border-border hover:-translate-y-0.5 transition-transform duration-200">
+                    <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ background: "rgba(10,173,168,0.10)" }}>
+                      <Icon className="w-5 h-5" style={{ color: "#0AADA8" }} />
+                    </div>
+                    <div>
+                      <div className="font-bold text-foreground mb-1" style={{ fontFamily: "Manrope, sans-serif" }}>{b.title}</div>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{b.desc}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Süreç + CTA */}
+          <div>
+            <h3 className="text-xl font-extrabold text-foreground mb-6" style={{ fontFamily: "Manrope, sans-serif" }}>
+              Merkezimizde Sizi Ne Bekliyor?
+            </h3>
+            <div className="space-y-4 mb-8">
+              {FB_PROCESS.map((p) => (
+                <div key={p.n} className="flex items-start gap-4 bg-white rounded-2xl p-5 border border-border hover:-translate-y-0.5 transition-transform duration-200">
+                  <span className="w-8 h-8 rounded-full text-white text-sm font-extrabold flex items-center justify-center shrink-0" style={{ background: "#123B6D" }}>
+                    {p.n}
+                  </span>
+                  <div>
+                    <div className="font-bold text-foreground mb-1" style={{ fontFamily: "Manrope, sans-serif" }}>{p.title}</div>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="rounded-2xl p-6 text-white" style={{ background: "linear-gradient(135deg, #123B6D 0%, #0AADA8 100%)" }}>
+              <div className="flex items-center gap-2 mb-2">
+                <Clock className="w-5 h-5 text-white/80" />
+                <span className="font-extrabold text-lg" style={{ fontFamily: "Manrope, sans-serif" }}>Sadece 10 Dakikada Hazır!</span>
+              </div>
+              <p className="text-sm mb-5" style={{ color: "rgba(255,255,255,0.75)" }}>
+                Ücretsiz ayak analizi için hemen randevu alın. SGK kapsamı hakkında bilgi alın.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <a href="https://wa.me/905543098070" className="flex items-center gap-2 bg-white font-bold text-sm px-5 py-2.5 rounded-xl hover:-translate-y-0.5 transition-transform" style={{ color: "#123B6D" }}>
+                  <MessageCircle className="w-4 h-4" />
+                  WhatsApp ile Randevu
+                </a>
+                <a href="tel:+902742260717" className="flex items-center gap-2 bg-white/15 border border-white/30 text-white font-bold text-sm px-5 py-2.5 rounded-xl hover:-translate-y-0.5 transition-transform">
+                  <Phone className="w-4 h-4" />
+                  0274 226 07 17
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1338,6 +1445,7 @@ export default function App() {
         <Hero />
         <About />
         <Services />
+        <FootBalance />
         <WhyUs />
         <PatientProcess />
         <Stats />
