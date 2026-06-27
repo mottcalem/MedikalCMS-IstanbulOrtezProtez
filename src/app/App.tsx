@@ -471,8 +471,8 @@ function Hero() {
             <div className="relative w-full max-w-[440px]">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
                 <img
-                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=750&fit=crop&auto=format"
-                  alt="Klinik rehabilitasyon seansı"
+                  src="/hero-foot-analysis.jpg"
+                  alt="Ayak analizi yapılan hasta"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(18,59,109,0.4), transparent)" }} />
@@ -1039,155 +1039,30 @@ function FAQ() {
 // ─── Contact ──────────────────────────────────────────────────────────────────
 
 function Contact() {
-  const [form, setForm] = useState({ name: "", phone: "", email: "", message: "" });
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [sent, setSent] = useState(false);
-
-  const validate = () => {
-    const e: Record<string, string> = {};
-    if (!form.name.trim()) e.name = "Ad Soyad zorunludur.";
-    if (!form.phone.trim()) e.phone = "Telefon numarası zorunludur.";
-    if (form.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = "Geçerli bir e-posta girin.";
-    if (!form.message.trim()) e.message = "Mesaj alanı zorunludur.";
-    return e;
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const errs = validate();
-    if (Object.keys(errs).length > 0) { setErrors(errs); return; }
-    setErrors({});
-    setSent(true);
-    setForm({ name: "", phone: "", email: "", message: "" });
-  };
-
-  const fieldClass = (id: string) =>
-    `w-full border rounded-xl px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground bg-background focus:outline-none focus:ring-2 transition-all ${
-      errors[id] ? "border-destructive focus:ring-destructive/30" : "border-border focus:border-accent focus:ring-accent/30"
-    }`;
-
   return (
-    <section id="iletisim" className="py-24 bg-secondary/40">
+    <section id="iletisim" className="py-24 bg-secondary/40" aria-label="İletişim ve konum bilgileri">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="İletişim"
-          title="Bizimle İletişime Geçin"
-          subtitle="Ücretsiz ön değerlendirme için hemen arayın veya formumuzu doldurun, en kısa sürede size ulaşalım."
+          title="Bizi Ziyaret Edin"
+          subtitle="Ücretsiz ön değerlendirme için kliniğimize bekliyor, telefon veya WhatsApp üzerinden kolayca ulaşabilirsiniz."
         />
 
         <div className="grid lg:grid-cols-2 gap-10">
-
-          <div className="bg-white border border-border rounded-3xl p-8 shadow-sm">
-            <h3 className="text-xl font-bold text-foreground mb-6" style={{ fontFamily: "Manrope, sans-serif" }}>
-              İletişim Formu
-            </h3>
-
-            {sent ? (
-              <div className="flex flex-col items-center justify-center py-14 text-center">
-                <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-4">
-                  <CheckCircle className="w-8 h-8 text-green-500" />
-                </div>
-                <h4 className="font-bold text-foreground text-lg mb-2" style={{ fontFamily: "Manrope, sans-serif" }}>
-                  Mesajınız Alındı!
-                </h4>
-                <p className="text-muted-foreground text-sm">En geç 24 saat içinde sizi arayacağız.</p>
-                <button
-                  onClick={() => setSent(false)}
-                  className="mt-6 text-sm font-semibold hover:underline"
-                  style={{ color: "#0AADA8" }}
-                >
-                  Yeni mesaj gönder
-                </button>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} noValidate className="space-y-4">
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-semibold text-foreground mb-1.5">
-                      Ad Soyad <span className="text-destructive">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      value={form.name}
-                      onChange={(e) => setForm({ ...form, name: e.target.value })}
-                      placeholder="Adınız ve soyadınız"
-                      className={fieldClass("name")}
-                    />
-                    {errors.name && <p className="text-xs text-destructive mt-1">{errors.name}</p>}
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-foreground mb-1.5">
-                      Telefon <span className="text-destructive">*</span>
-                    </label>
-                    <input
-                      type="tel"
-                      value={form.phone}
-                      onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                      placeholder="0532 123 45 67"
-                      className={fieldClass("phone")}
-                    />
-                    {errors.phone && <p className="text-xs text-destructive mt-1">{errors.phone}</p>}
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-foreground mb-1.5">E-posta</label>
-                  <input
-                    type="email"
-                    value={form.email}
-                    onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    placeholder="ornek@email.com"
-                    className={fieldClass("email")}
-                  />
-                  {errors.email && <p className="text-xs text-destructive mt-1">{errors.email}</p>}
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-foreground mb-1.5">
-                    Mesajınız <span className="text-destructive">*</span>
-                  </label>
-                  <textarea
-                    rows={4}
-                    value={form.message}
-                    onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    placeholder="Nasıl yardımcı olabiliriz?"
-                    className={fieldClass("message") + " resize-none"}
-                  />
-                  {errors.message && <p className="text-xs text-destructive mt-1">{errors.message}</p>}
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full text-white font-bold py-4 rounded-xl transition-all duration-200 hover:-translate-y-0.5 text-[15px]"
-                  style={{ background: "#123B6D", boxShadow: "0 6px 24px rgba(18,59,109,0.22)" }}
-                >
-                  Mesaj Gönder
-                </button>
-                <p className="text-xs text-muted-foreground text-center">
-                  Formu göndererek{" "}
-                  <a href="#kvkk" className="hover:underline" style={{ color: "#0AADA8" }}>
-                    KVKK Aydınlatma Metni
-                  </a>
-                  'ni kabul etmiş sayılırsınız.
-                </p>
-              </form>
-            )}
+          <div className="h-[500px] rounded-3xl overflow-hidden border border-border shadow-sm">
+            <iframe
+              title="İstanbul Ortez Protez Kütahya Klinik Konumu"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              src="https://maps.google.com/maps?q=Alipaşa+Mah+Fuatpaşa+Cad+No+23+Kütahya+Türkiye&output=embed&z=15&hl=tr"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
 
-          <div className="space-y-5">
-            <div className="h-52 bg-muted rounded-2xl overflow-hidden border border-border">
-              <iframe
-                title="OrtezProtez İstanbul Konum"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96087.65060539!2d28.8773263!3d41.0082376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str"
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-
+          <div className="space-y-4">
             <div className="grid sm:grid-cols-2 gap-4">
               {[
                 { icon: MapPin, label: "Adres", value: "Alipaşa Mah. Fuatpaşa Cad. No:23/A\nKütahya" },
@@ -1223,6 +1098,7 @@ function Contact() {
               href="https://wa.me/905543098070"
               className="flex items-center gap-4 text-white font-bold p-5 rounded-2xl transition-all duration-200 hover:-translate-y-0.5"
               style={{ background: "#22c55e", boxShadow: "0 6px 24px rgba(34,197,94,0.28)" }}
+              aria-label="WhatsApp ile iletişime geçin"
             >
               <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ background: "rgba(255,255,255,0.2)" }}>
                 <MessageCircle className="w-6 h-6" />
@@ -1232,6 +1108,22 @@ function Contact() {
                 <div className="text-xs font-normal" style={{ color: "rgba(255,255,255,0.72)" }}>
                   Genellikle birkaç dakika içinde yanıt veriyoruz
                 </div>
+              </div>
+              <ArrowRight className="w-5 h-5 opacity-70" />
+            </a>
+
+            <a
+              href="tel:+902742260717"
+              className="flex items-center gap-4 text-white font-bold p-5 rounded-2xl transition-all duration-200 hover:-translate-y-0.5"
+              style={{ background: "#123B6D", boxShadow: "0 6px 24px rgba(18,59,109,0.22)" }}
+              aria-label="Hemen ara 0274 226 07 17"
+            >
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ background: "rgba(255,255,255,0.15)" }}>
+                <Phone className="w-6 h-6" />
+              </div>
+              <div className="flex-1">
+                <div className="text-[15px]">Hemen Ara</div>
+                <div className="text-xs font-normal" style={{ color: "rgba(255,255,255,0.72)" }}>0274 226 07 17</div>
               </div>
               <ArrowRight className="w-5 h-5 opacity-70" />
             </a>
@@ -1341,16 +1233,21 @@ function Footer() {
               Yasal
             </h4>
             <ul className="space-y-2.5 mb-6">
-              {["KVKK Aydınlatma Metni", "Gizlilik Politikası", "Çerez Politikası", "Kullanım Koşulları"].map((s) => (
-                <li key={s}>
+              {[
+                { label: "KVKK Aydınlatma Metni", href: "/kvkk" },
+                { label: "Gizlilik Politikası", href: "/gizlilik-politikasi" },
+                { label: "Çerez Politikası", href: "/cerez-politikasi" },
+                { label: "Kullanım Koşulları", href: "/kullanim-kosullari" },
+              ].map((item) => (
+                <li key={item.label}>
                   <a
-                    href="#kvkk"
+                    href={item.href}
                     className="text-sm transition-colors duration-200"
                     style={{ color: "rgba(255,255,255,0.48)" }}
                     onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "white"; }}
                     onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.48)"; }}
                   >
-                    {s}
+                    {item.label}
                   </a>
                 </li>
               ))}
