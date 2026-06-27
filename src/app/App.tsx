@@ -308,9 +308,9 @@ function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           <a href="#anasayfa" className="flex items-center shrink-0">
-            <img src="/logo.svg" alt="İstanbul Ortez Protez" className="h-16 w-auto max-w-[180px]" />
+            <img src="/logo.svg" alt="İstanbul Ortez Protez" className="h-24 w-auto max-w-[260px]" />
           </a>
 
           <nav className="hidden xl:flex items-center gap-0.5">
@@ -1144,7 +1144,7 @@ function Footer() {
 
           <div>
             <div className="mb-5">
-              <img src="/logo.svg" alt="İstanbul Ortez Protez" className="h-16 w-auto" style={{ filter: "brightness(0) invert(1)" }} />
+              <img src="/logo.svg" alt="İstanbul Ortez Protez" className="h-20 w-auto max-w-[220px]" style={{ filter: "brightness(0) invert(1)" }} />
             </div>
             <p className="text-sm leading-relaxed mb-6" style={{ color: "rgba(255,255,255,0.52)" }}>
               15 yılı aşkın deneyimimizle Kütahya'nın lider ortez ve protez merkezi olarak, her hastamıza kişiye özel çözümler sunuyoruz.
