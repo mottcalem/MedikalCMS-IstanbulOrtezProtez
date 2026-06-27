@@ -309,19 +309,8 @@ function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <a href="#anasayfa" className="flex items-center gap-3 shrink-0">
-            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-md">
-              <Activity className="w-5 h-5 text-white" />
-            </div>
-            <div>
-              <div
-                className="font-extrabold text-primary text-[17px] leading-tight"
-                style={{ fontFamily: "Manrope, sans-serif" }}
-              >
-                OrtezProtez
-              </div>
-              <div className="text-[11px] text-muted-foreground font-medium">İstanbul Merkezi</div>
-            </div>
+          <a href="#anasayfa" className="flex items-center shrink-0">
+            <img src="/logo.svg" alt="İstanbul Ortez Protez" className="h-16 w-auto max-w-[180px]" />
           </a>
 
           <nav className="hidden xl:flex items-center gap-0.5">
@@ -338,14 +327,14 @@ function Header() {
 
           <div className="hidden lg:flex items-center gap-2.5">
             <a
-              href="tel:+902121234567"
+              href="tel:+902742260717"
               className="flex items-center gap-2 text-[13px] font-bold text-primary bg-secondary border border-primary/15 px-4 py-2.5 rounded-xl hover:bg-primary hover:text-white transition-all duration-200"
             >
               <Phone className="w-4 h-4" />
               Hemen Ara
             </a>
             <a
-              href="https://wa.me/905321234567"
+              href="https://wa.me/905543098070"
               className="flex items-center gap-2 text-[13px] font-bold text-white bg-green-500 hover:bg-green-600 px-4 py-2.5 rounded-xl transition-all duration-200 shadow-md"
             >
               <MessageCircle className="w-4 h-4" />
@@ -378,13 +367,13 @@ function Header() {
             ))}
             <div className="flex gap-3 pt-3 border-t border-border mt-2">
               <a
-                href="tel:+902121234567"
+                href="tel:+902742260717"
                 className="flex-1 flex items-center justify-center gap-2 text-sm font-bold text-primary bg-secondary border border-primary/15 px-4 py-3 rounded-xl"
               >
                 <Phone className="w-4 h-4" /> Hemen Ara
               </a>
               <a
-                href="https://wa.me/905321234567"
+                href="https://wa.me/905543098070"
                 className="flex-1 flex items-center justify-center gap-2 text-sm font-bold text-white bg-green-500 px-4 py-3 rounded-xl"
               >
                 <MessageCircle className="w-4 h-4" /> WhatsApp
@@ -450,7 +439,7 @@ function Hero() {
                 <ArrowRight className="w-5 h-5" />
               </a>
               <a
-                href="https://wa.me/905321234567"
+                href="https://wa.me/905543098070"
                 className="inline-flex items-center gap-2.5 text-white font-semibold px-8 py-4 rounded-2xl border transition-all duration-200 hover:-translate-y-0.5 text-[15px]"
                 style={{ background: "rgba(255,255,255,0.1)", borderColor: "rgba(255,255,255,0.2)" }}
               >
@@ -482,7 +471,7 @@ function Hero() {
             <div className="relative w-full max-w-[440px]">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5]">
                 <img
-                  src="https://images.unsplash.com/photo-1709880754472-be89c13abc52?w=600&h=750&fit=crop&auto=format"
+                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=750&fit=crop&auto=format"
                   alt="Klinik rehabilitasyon seansı"
                   className="w-full h-full object-cover"
                 />
@@ -562,7 +551,7 @@ function About() {
           <div className="relative pb-8">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1709880754438-b1fb5d2f074c?w=400&h=280&fit=crop&auto=format"
+                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=280&fit=crop&auto=format"
                 alt="Uzman protez teknisyeni"
                 className="w-full rounded-2xl shadow-lg object-cover"
               />
@@ -1036,7 +1025,7 @@ function FAQ() {
             </div>
           </div>
           <a
-            href="https://wa.me/905321234567"
+            href="https://wa.me/905543098070"
             className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all duration-200 whitespace-nowrap"
           >
             <MessageCircle className="w-4 h-4" /> WhatsApp'ta Sor
@@ -1201,9 +1190,9 @@ function Contact() {
 
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { icon: MapPin, label: "Adres", value: "Bağcılar Mah. Atatürk Cad. No:42\nBağcılar / İstanbul" },
-                { icon: Phone, label: "Telefon", value: "+90 (212) 123 45 67\n+90 (532) 123 45 67" },
-                { icon: Mail, label: "E-posta", value: "info@ortezprotez.com\nrandevu@ortezprotez.com" },
+                { icon: MapPin, label: "Adres", value: "Alipaşa Mah. Fuatpaşa Cad. No:23/A\nKütahya" },
+                { icon: Phone, label: "Telefon", value: "0274 226 07 17\n0554 309 80 70" },
+                { icon: Mail, label: "E-posta", value: "istanbulmedikal@msn.com" },
                 { icon: Clock, label: "Çalışma Saatleri", value: "Pzt–Cum: 08:00–18:00\nCumartesi: 09:00–14:00" },
               ].map((item) => {
                 const Icon = item.icon;
@@ -1231,7 +1220,7 @@ function Contact() {
             </div>
 
             <a
-              href="https://wa.me/905321234567"
+              href="https://wa.me/905543098070"
               className="flex items-center gap-4 text-white font-bold p-5 rounded-2xl transition-all duration-200 hover:-translate-y-0.5"
               style={{ background: "#22c55e", boxShadow: "0 6px 24px rgba(34,197,94,0.28)" }}
             >
@@ -1262,19 +1251,8 @@ function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
 
           <div>
-            <div className="flex items-center gap-3 mb-5">
-              <div
-                className="w-10 h-10 rounded-xl flex items-center justify-center"
-                style={{ background: "#0AADA8" }}
-              >
-                <Activity className="w-5 h-5 text-white" />
-              </div>
-              <div>
-                <div className="font-extrabold text-[17px] leading-tight" style={{ fontFamily: "Manrope, sans-serif" }}>
-                  OrtezProtez
-                </div>
-                <div className="text-[11px]" style={{ color: "rgba(255,255,255,0.4)" }}>İstanbul Merkezi</div>
-              </div>
+            <div className="mb-5">
+              <img src="/logo.svg" alt="İstanbul Ortez Protez" className="h-16 w-auto" style={{ filter: "brightness(0) invert(1)" }} />
             </div>
             <p className="text-sm leading-relaxed mb-6" style={{ color: "rgba(255,255,255,0.52)" }}>
               15 yılı aşkın deneyimimizle İstanbul'un lider ortez ve protez merkezi olarak, her hastamıza kişiye özel çözümler sunuyoruz.
@@ -1422,7 +1400,7 @@ function FloatingButtons({ scrollY }: { scrollY: number }) {
       )}
 
       <a
-        href="https://wa.me/905321234567"
+        href="https://wa.me/905543098070"
         className="flex items-center gap-2.5 text-white font-bold px-4 py-3 rounded-2xl transition-all duration-200 hover:-translate-y-0.5"
         style={{ background: "#22c55e", boxShadow: "0 4px 20px rgba(34,197,94,0.35)" }}
         aria-label="WhatsApp ile iletişim"
@@ -1450,12 +1428,12 @@ export default function App() {
             name: "OrtezProtez İstanbul Merkezi",
             description: "İstanbul'da kişiye özel ortez ve protez çözümleri sunan SGK anlaşmalı merkez.",
             url: "https://ortezprotez.com",
-            telephone: "+90-212-123-45-67",
+            telephone: "+90-274-226-07-17",
             address: {
               "@type": "PostalAddress",
-              streetAddress: "Bağcılar Mah. Atatürk Cad. No:42",
-              addressLocality: "Bağcılar",
-              addressRegion: "İstanbul",
+              streetAddress: "Alipaşa Mah. Fuatpaşa Cad. No:23/A",
+              addressLocality: "Kütahya",
+              addressRegion: "Kütahya",
               addressCountry: "TR",
             },
             openingHours: ["Mo-Fr 08:00-18:00", "Sa 09:00-14:00"],
