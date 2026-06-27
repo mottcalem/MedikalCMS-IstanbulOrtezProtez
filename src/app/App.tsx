@@ -149,7 +149,7 @@ const BLOG_POSTS = [
     category: "Rehabilitasyon",
     date: "8 Haziran 2025",
     readTime: "12 dk",
-    img: "photo-1709880754438-b1fb5d2f074c",
+    img: "photo-1760333334115-e75194471dd7",
     toc: ["Ameliyat Sonrası", "Protez Tipleri", "Adaptasyon Süreci", "Egzersizler"],
   },
   {
@@ -158,7 +158,7 @@ const BLOG_POSTS = [
     category: "Ortez",
     date: "1 Haziran 2025",
     readTime: "10 dk",
-    img: "photo-1709880754472-be89c13abc52",
+    img: "photo-1508387027939-27cccde53673",
     toc: ["Skolyoz Nedir?", "Tanı Süreci", "Korse Endikasyonları", "Kullanım Süresi"],
   },
   {
@@ -413,7 +413,7 @@ function Hero() {
           <div>
             <div className="inline-flex items-center gap-2 border text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-8" style={{ background: "rgba(10,173,168,0.18)", color: "#0AADA8", borderColor: "rgba(10,173,168,0.35)" }}>
               <CheckCircle className="w-3.5 h-3.5" />
-              SGK Anlaşmalı · Kütahya
+              Kütahya Ortez Protez Merkezi
             </div>
 
             <h1
@@ -489,11 +489,6 @@ function Hero() {
                   </div>
                 </div>
                 <p className="text-[11px] text-muted-foreground">"Harika bir hizmet, çok memnun kaldım!"</p>
-              </div>
-
-              <div className="absolute -top-4 -right-4 text-white rounded-2xl shadow-xl px-4 py-3 border" style={{ background: "rgba(18,59,109,0.95)", borderColor: "rgba(255,255,255,0.1)" }}>
-                <div className="text-[10px] font-medium" style={{ color: "rgba(255,255,255,0.6)" }}>Ortalama teslim</div>
-                <div className="text-xl font-black" style={{ fontFamily: "Manrope, sans-serif" }}>5–7 gün</div>
               </div>
             </div>
           </div>
