@@ -10,14 +10,12 @@ import {
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const NAV_LINKS = [
-  { label: "Anasayfa", href: "#anasayfa" },
   { label: "Hakkımızda", href: "#hakkimizda" },
   { label: "Hizmetlerimiz", href: "#hizmetler" },
-  { label: "FootBalance", href: "#footbalance" },
+  { label: "Ortopedik Tabanlık", href: "#footbalance" },
   { label: "Neden Biz?", href: "#neden-biz" },
   { label: "Hasta Hikayeleri", href: "#yorumlar" },
   { label: "Blog", href: "#blog" },
-  { label: "SSS", href: "#sss" },
   { label: "İletişim", href: "#iletisim" },
 ];
 
@@ -726,26 +724,33 @@ function FootBalance() {
               ))}
             </div>
 
-            <div className="rounded-2xl p-6 text-white" style={{ background: "linear-gradient(135deg, #123B6D 0%, #0AADA8 100%)" }}>
-              <div className="flex items-center gap-2 mb-2">
-                <Clock className="w-5 h-5 text-white/80" />
-                <span className="font-extrabold text-lg" style={{ fontFamily: "Manrope, sans-serif" }}>Sadece 10 Dakikada Hazır!</span>
-              </div>
-              <p className="text-sm mb-5" style={{ color: "rgba(255,255,255,0.75)" }}>
-                Ücretsiz ayak analizi için hemen randevu alın. SGK kapsamı hakkında bilgi alın.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <a href="https://wa.me/905543098070" className="flex items-center gap-2 bg-white font-bold text-sm px-5 py-2.5 rounded-xl hover:-translate-y-0.5 transition-transform" style={{ color: "#123B6D" }}>
-                  <MessageCircle className="w-4 h-4" />
-                  WhatsApp ile Randevu
-                </a>
-                <a href="tel:+902742260717" className="flex items-center gap-2 bg-white/15 border border-white/30 text-white font-bold text-sm px-5 py-2.5 rounded-xl hover:-translate-y-0.5 transition-transform">
-                  <Phone className="w-4 h-4" />
-                  0274 226 07 17
-                </a>
-              </div>
-            </div>
+           
           </div>
+        </div>
+      </div>
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="rounded-3xl p-8 lg:p-10 text-white">
+                    <div className="w-full rounded-2xl p-6 text-white">
+                  <div className="rounded-2xl p-6 text-white" style={{ background: "linear-gradient(135deg, #123B6D 0%, #0AADA8 100%)" }}>
+                    <div className="flex items-center gap-2 mb-2">
+                      <Clock className="w-5 h-5 text-white/80" />
+                      <span className="font-extrabold text-lg" style={{ fontFamily: "Manrope, sans-serif" }}>Sadece 10 Dakikada Hazır!</span>
+                    </div>
+                    <p className="text-sm mb-5" style={{ color: "rgba(255,255,255,0.75)" }}>
+                      Ücretsiz ayak analizi için hemen randevu alın. SGK kapsamı hakkında bilgi alın.
+                    </p>
+                    <div className="flex flex-wrap gap-3">
+                      <a href="https://wa.me/905543098070" className="flex items-center gap-2 bg-white font-bold text-sm px-5 py-2.5 rounded-xl hover:-translate-y-0.5 transition-transform" style={{ color: "#123B6D" }}>
+                        <MessageCircle className="w-4 h-4" />
+                        WhatsApp ile Randevu
+                      </a>
+                      <a href="tel:+902742260717" className="flex items-center gap-2 bg-white/15 border border-white/30 text-white font-bold text-sm px-5 py-2.5 rounded-xl hover:-translate-y-0.5 transition-transform">
+                        <Phone className="w-4 h-4" />
+                        0274 226 07 17
+                      </a>
+                    </div>
+                  </div>
+                </div>
         </div>
       </div>
     </section>
