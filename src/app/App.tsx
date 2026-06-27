@@ -430,9 +430,9 @@ function Hero() {
               className="text-[2.6rem] sm:text-5xl lg:text-[3.2rem] font-black text-white leading-[1.12] mb-6"
               style={{ fontFamily: "Manrope, sans-serif" }}
             >
-              Hareket Özgürlüğünüz{" "}
-              <span style={{ color: "#0AADA8" }}>İçin</span>{" "}
-              Yanınızdayız
+              Kütahya{" "}
+              <span style={{ color: "#0AADA8" }}>Ortez Protez Merkezi</span>{" "}
+              Uzmanı
             </h1>
 
             <p className="text-lg leading-relaxed mb-10 max-w-xl" style={{ color: "rgba(255,255,255,0.72)" }}>
