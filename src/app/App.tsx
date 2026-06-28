@@ -15,7 +15,7 @@ const NAV_LINKS = [
   { label: "FootBalance®", href: "#footbalance" },
   { label: "Neden Biz?", href: "#neden-biz" },
   { label: "Hasta Hikayeleri", href: "#yorumlar" },
-  { label: "Blog", href: "#blog" },
+  { label: "Blog", href: "/blog" },
   { label: "İletişim", href: "#iletisim" },
 ];
 
