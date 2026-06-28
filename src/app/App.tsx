@@ -640,12 +640,15 @@ function Services() {
                   {item.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
-                <div
-                  className="mt-4 flex items-center gap-1 text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                <a
+                  href="https://wa.me/905543098070"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   style={{ color: "#0AADA8" }}
                 >
-                  Detaylı Bilgi <ArrowRight className="w-3.5 h-3.5" />
-                </div>
+                  <MessageCircle className="w-3.5 h-3.5" /> WhatsApp İletişim
+                </a>
               </div>
             );
           })}
