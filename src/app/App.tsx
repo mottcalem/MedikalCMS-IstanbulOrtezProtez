@@ -773,24 +773,28 @@ function FootBalance() {
               ))}
             </div>
 
-            <div className="rounded-2xl p-6 text-white" style={{ background: "linear-gradient(135deg, #123B6D 0%, #0AADA8 100%)" }}>
-              <div className="flex items-center gap-2 mb-2">
-                <Clock className="w-5 h-5 text-white/80" />
-                <span className="font-extrabold text-lg" style={{ fontFamily: "Manrope, sans-serif" }}>Sadece 10 Dakikada Hazır!</span>
-              </div>
-              <p className="text-sm mb-5" style={{ color: "rgba(255,255,255,0.75)" }}>
-                Ücretsiz ayak analizi için hemen randevu alın. SGK kapsamı hakkında bilgi alın.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <a href="https://wa.me/905543098070" className="flex items-center gap-2 bg-white font-bold text-sm px-5 py-2.5 rounded-xl hover:-translate-y-0.5 transition-transform" style={{ color: "#123B6D" }}>
-                  <MessageCircle className="w-4 h-4" />
-                  WhatsApp ile Randevu
-                </a>
-                <a href="tel:+902742260717" className="flex items-center gap-2 bg-white/15 border border-white/30 text-white font-bold text-sm px-5 py-2.5 rounded-xl hover:-translate-y-0.5 transition-transform">
-                  <Phone className="w-4 h-4" />
-                  0274 226 07 17
-                </a>
-              </div>
+          </div>
+        </div>
+
+        {/* Ortalanmış CTA */}
+        <div className="mt-14 flex justify-center">
+          <div className="w-full max-w-2xl rounded-2xl p-8 text-white text-center" style={{ background: "linear-gradient(135deg, #123B6D 0%, #0AADA8 100%)" }}>
+            <div className="flex items-center justify-center gap-2 mb-3">
+              <Clock className="w-5 h-5 text-white/80" />
+              <span className="font-extrabold text-xl" style={{ fontFamily: "Manrope, sans-serif" }}>Sadece 10 Dakikada Hazır!</span>
+            </div>
+            <p className="text-sm mb-6 max-w-md mx-auto" style={{ color: "rgba(255,255,255,0.75)" }}>
+              Ücretsiz ayak analizi için hemen randevu alın. SGK kapsamı hakkında bilgi alın.
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <a href="https://wa.me/905543098070" className="flex items-center gap-2 bg-white font-bold text-sm px-6 py-3 rounded-xl hover:-translate-y-0.5 transition-transform" style={{ color: "#123B6D" }}>
+                <MessageCircle className="w-4 h-4" />
+                WhatsApp ile Randevu
+              </a>
+              <a href="tel:+902742260717" className="flex items-center gap-2 bg-white/15 border border-white/30 text-white font-bold text-sm px-6 py-3 rounded-xl hover:-translate-y-0.5 transition-transform">
+                <Phone className="w-4 h-4" />
+                0274 226 07 17
+              </a>
             </div>
           </div>
         </div>
