@@ -90,7 +90,9 @@ export default function BlogPage() {
               {featured.map((post) => (
                 <Link key={post.slug} to={`/blog/${post.slug}`}
                   className="group relative rounded-3xl overflow-hidden flex flex-col justify-end p-7 min-h-[240px] hover:-translate-y-1 transition-all duration-300 shadow-lg">
-                  <div className="absolute inset-0" style={{ background: `linear-gradient(135deg, ${post.coverColor}ee 0%, ${post.coverColor}99 100%)` }} />
+                  <img src={post.coverImage} alt={post.title} loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <div className="absolute inset-0" style={{ background: `linear-gradient(135deg, ${post.coverColor}dd 0%, ${post.coverColor}99 100%)` }} />
                   <div className="relative z-10">
                     <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3 bg-white/20 text-white">
                       <Tag className="w-3 h-3" /> {post.category}
@@ -140,15 +142,15 @@ export default function BlogPage() {
             {filtered.map((post) => (
               <Link key={post.slug} to={`/blog/${post.slug}`}
                 className="group bg-white border border-border rounded-2xl overflow-hidden hover:-translate-y-1 hover:shadow-lg transition-all duration-300 flex flex-col">
-                {/* Renk banner */}
-                <div className="h-3 w-full" style={{ background: `linear-gradient(90deg, ${post.coverColor} 0%, ${post.coverColor}88 100%)` }} />
+                <div className="relative h-44 overflow-hidden">
+                  <img src={post.coverImage} alt={post.title} loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <div className="absolute inset-0" style={{ background: `linear-gradient(180deg, transparent 40%, ${post.coverColor}66 100%)` }} />
+                  <span className="absolute top-3 left-3 inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-white/90 text-foreground">
+                    <Tag className="w-3 h-3" /> {post.category}
+                  </span>
+                </div>
                 <div className="p-6 flex flex-col flex-1">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-full"
-                      style={{ background: "rgba(10,173,168,0.10)", color: "#087a76", border: "1px solid rgba(10,173,168,0.25)" }}>
-                      {post.category}
-                    </span>
-                  </div>
                   <h3 className="font-extrabold text-foreground text-[15px] leading-snug mb-2 group-hover:text-primary transition-colors" style={{ fontFamily: "Manrope, sans-serif" }}>
                     {post.title}
                   </h3>

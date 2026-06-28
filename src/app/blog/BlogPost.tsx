@@ -166,8 +166,10 @@ export default function BlogPostPage() {
       </header>
 
       {/* Article Hero */}
-      <div className="py-12 text-white" style={{ background: `linear-gradient(135deg, ${post.coverColor}f0 0%, ${post.coverColor}aa 100%)` }}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+      <div className="relative py-12 text-white overflow-hidden" style={{ background: `linear-gradient(135deg, ${post.coverColor}f0 0%, ${post.coverColor}aa 100%)` }}>
+        <img src={post.coverImage} alt={post.title} className="absolute inset-0 w-full h-full object-cover opacity-25" />
+        <div className="absolute inset-0" style={{ background: `linear-gradient(135deg, ${post.coverColor}f0 0%, ${post.coverColor}cc 100%)` }} />
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6">
           {/* Breadcrumb schema */}
           <nav aria-label="Breadcrumb" className="mb-5">
             <ol className="flex items-center gap-2 text-xs text-white/70 font-semibold flex-wrap">

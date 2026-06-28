@@ -1,11 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import {
-  Menu, X, Phone, MessageCircle, ChevronDown, ChevronUp,
-  ChevronLeft, ChevronRight, Star, MapPin, Mail, Clock,
-  ArrowUp, CheckCircle, Award, Zap, Shield, Activity,
-  Cpu, Scan, Wrench, HeartHandshake, ArrowRight, Baby,
-  Dumbbell, Heart, Settings, RefreshCw, FileText, Calendar,
-} from "lucide-react";
+import { Menu, X, Phone, MessageCircle, ChevronDown, ChevronUp, ChevronLeft, ChevronRight, Star, MapPin, Mail, Clock, ArrowUp, CircleCheck as CheckCircle, Award, Zap, Shield, Activity, Cpu, Scan, Wrench, HeartHandshake, ArrowRight, Baby, Dumbbell, Heart, Settings, RefreshCw, FileText, Calendar } from "lucide-react";
+import { BLOG_POSTS as ALL_BLOG_POSTS } from "./blog/blogData";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
@@ -121,7 +116,7 @@ const TESTIMONIALS = [
     name: "Mehmet Yılmaz",
     meta: "42 Yaşında · Diz Altı Protez Kullanıcısı",
     text: "Diz altı protezimi aldıktan sonra hayatım tamamen değişti. Artık çocuklarımla parkta koşabiliyorum. Ekip gerçekten çok ilgili ve profesyonel, her adımda yanımda hissettim.",
-    img: "photo-1600275669439-14e40452d20b",
+    img: "photo-1633337554670-9f672ff0f1b1",
   },
   {
     name: "Ayşe Kara",
@@ -143,44 +138,16 @@ const TESTIMONIALS = [
   },
 ];
 
-const BLOG_POSTS = [
-  {
-    title: "Protez Seçerken Nelere Dikkat Edilmeli?",
-    excerpt: "Doğru protezi seçmek yaşam kalitenizi doğrudan etkiler. Aktivite seviyesi, vücut ağırlığı ve yaşam tarzınıza göre en uygun protezi nasıl belirleyebilirsiniz?",
-    category: "Protez Bilgisi",
-    date: "15 Haziran 2025",
-    readTime: "8 dk",
-    img: "photo-1760333333916-9fb99a7df0c7",
-    toc: ["Protez Türleri", "Malzeme Seçimi", "Aktivite Düzeyi", "SGK Kapsamı"],
-  },
-  {
-    title: "Diz Altı Protez Rehberi",
-    excerpt: "Trans-tibial amputasyon sonrası diz altı protez seçenekleri, adaptasyon süreci ve günlük yaşama dönüş hakkında bilmeniz gereken her şey.",
-    category: "Rehabilitasyon",
-    date: "8 Haziran 2025",
-    readTime: "12 dk",
-    img: "photo-1760333334115-e75194471dd7",
-    toc: ["Ameliyat Sonrası", "Protez Tipleri", "Adaptasyon Süreci", "Egzersizler"],
-  },
-  {
-    title: "Skolyoz Korsesi Kimler Kullanmalı?",
-    excerpt: "Omurga eğriliğinin erken tespiti ve korse tedavisi hakkında kapsamlı rehber. Hangi Cobb açısında korse gerekir?",
-    category: "Ortez",
-    date: "1 Haziran 2025",
-    readTime: "10 dk",
-    img: "photo-1508387027939-27cccde53673",
-    toc: ["Skolyoz Nedir?", "Tanı Süreci", "Korse Endikasyonları", "Kullanım Süresi"],
-  },
-  {
-    title: "Biyonik Kol Protezleri Nasıl Çalışır?",
-    excerpt: "Miyoelektrik sinyaller ve yapay zeka teknolojisinin birleşimiyle çalışan biyonik kol protezlerinin bilimsel temelleri.",
-    category: "Teknoloji",
-    date: "22 Mayıs 2025",
-    readTime: "9 dk",
-    img: "photo-1782397132123-0166b524d6bc",
-    toc: ["Miyoelektrik Sinyaller", "Yapay Zeka", "Kalibrasyon", "Bakım"],
-  },
-];
+const BLOG_POSTS = ALL_BLOG_POSTS.slice(0, 4).map((p) => ({
+  title: p.title,
+  excerpt: p.excerpt,
+  category: p.category,
+  date: new Date(p.publishedAt).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" }),
+  readTime: `${p.readingTime} dk`,
+  img: p.coverImage,
+  slug: p.slug,
+  toc: p.sections.filter((s) => s.level === 2).slice(0, 4).map((s) => s.heading),
+}));
 
 const FAQ_ITEMS = [
   {
@@ -1061,7 +1028,7 @@ function Blog() {
             >
               <div className="aspect-[16/9] overflow-hidden bg-muted">
                 <img
-                  src={`https://images.unsplash.com/${post.img}?w=400&h=225&fit=crop&auto=format`}
+                  src={post.img}
                   alt={post.title}
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
