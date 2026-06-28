@@ -116,25 +116,21 @@ const TESTIMONIALS = [
     name: "Mehmet Yılmaz",
     meta: "42 Yaşında · Diz Altı Protez Kullanıcısı",
     text: "Diz altı protezimi aldıktan sonra hayatım tamamen değişti. Artık çocuklarımla parkta koşabiliyorum. Ekip gerçekten çok ilgili ve profesyonel, her adımda yanımda hissettim.",
-    img: "photo-1633337554670-9f672ff0f1b1",
   },
   {
     name: "Ayşe Kara",
     meta: "35 Yaşında · Skolyoz Korsesi Kullanıcısı",
     text: "Skolyoz korsemin hazırlanmasından teslim sürecine kadar her şey inanılmaz bir özenle yönetildi. SGK süreçlerini de onlar halledince gerçekten çok rahatladım.",
-    img: "photo-1658314755931-eabf6a6671df",
   },
   {
     name: "Hasan Demir",
     meta: "58 Yaşında · Mikroişlemcili Diz Protezi Kullanıcısı",
     text: "Mikroişlemcili diz protezim sayesinde düz yüzeylerde ve merdivenlerde çok daha güvenli adım atıyorum. Bu teknolojiyi bu kadar erişilebilir sunan nadir merkezlerden biri.",
-    img: "photo-1597764690523-15bea4c581c9",
   },
   {
     name: "Fatma Özdemir",
     meta: "29 Yaşında · Biyonik Kol Protezi Kullanıcısı",
     text: "Biyonik kol protezim için farklı merkezlere danıştım ama buradaki kişisel ilgi fark yarattı. 3D tarama teknolojisi sayesinde mükemmel bir uyum sağlandı.",
-    img: "photo-1600275669439-14e40452d20b",
   },
 ];
 
@@ -951,17 +947,9 @@ function Testimonials() {
               <blockquote className="text-lg sm:text-xl text-foreground leading-relaxed mb-8 font-medium">
                 "{t.text}"
               </blockquote>
-              <div className="flex items-center gap-4">
-                <img
-                  src={`https://images.unsplash.com/${t.img}?w=80&h=80&fit=crop&crop=face&auto=format`}
-                  alt={t.name}
-                  className="w-14 h-14 rounded-full object-cover border-2"
-                  style={{ borderColor: "rgba(10,173,168,0.25)" }}
-                />
-                <div>
-                  <div className="font-bold text-foreground" style={{ fontFamily: "Manrope, sans-serif" }}>{t.name}</div>
-                  <div className="text-sm font-semibold" style={{ color: "#0AADA8" }}>{t.meta}</div>
-                </div>
+              <div className="text-center">
+                <div className="font-bold text-foreground" style={{ fontFamily: "Manrope, sans-serif" }}>{t.name}</div>
+                <div className="text-sm font-semibold" style={{ color: "#0AADA8" }}>{t.meta}</div>
               </div>
             </div>
           </div>
