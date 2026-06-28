@@ -711,7 +711,7 @@ function FootBalance() {
           {/* Ürün Görseli + İstatistikler */}
           <div className="relative rounded-3xl overflow-hidden shadow-xl" style={{ minHeight: 280 }}>
             <img
-              src="/footbalance-tabanlik.webp"
+              src="/footbalance-tabanlik.png"
               alt="FootBalance ortopedik tabanlık"
               className="w-full h-full object-cover"
               style={{ minHeight: 280 }}
