@@ -37,7 +37,7 @@ export const BLOG_POSTS: BlogPost[] = [
     keywords: ["kütahya ortez protez", "sgk ortez protez", "kütahya protez merkezi", "sgk protez başvurusu"],
     featured: true,
     coverColor: "#123B6D",
-    coverImage: "https://images.unsplash.com/photo-1631815588090-d4bfecbee44c?w=1200&q=80&auto=format&fit=crop",
+    coverImage: "https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?w=1200&q=80&auto=format&fit=crop",
     sections: [
       {
         id: "sgk-ortez-protez-nedir",
@@ -112,7 +112,7 @@ export const BLOG_POSTS: BlogPost[] = [
     keywords: ["bacak protezi", "alt ekstremite protezi", "ampütasyon protez", "trans-tibial protez", "trans-femoral protez"],
     featured: false,
     coverColor: "#0AADA8",
-    coverImage: "https://images.unsplash.com/photo-1581594691569-f8118634c0a5?w=1200&q=80&auto=format&fit=crop",
+    coverImage: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=1200&q=80&auto=format&fit=crop",
     sections: [
       {
         id: "amputasyon-duzeyleri",
@@ -316,7 +316,7 @@ export const BLOG_POSTS: BlogPost[] = [
     keywords: ["plantar fasiit tedavisi", "düz tabanlık tedavisi", "topuk ağrısı", "pes planus kütahya", "ayak tabanı ağrısı"],
     featured: false,
     coverColor: "#1a7a5e",
-    coverImage: "https://images.unsplash.com/photo-1576091160399-5bae8b9c8f5e?w=1200&q=80&auto=format&fit=crop",
+    coverImage: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=1200&q=80&auto=format&fit=crop",
     sections: [
       {
         id: "plantar-fasiit-nedir",
@@ -386,7 +386,7 @@ export const BLOG_POSTS: BlogPost[] = [
     keywords: ["çocuk ortezi", "pediyatrik ortez", "afo çocuk", "çocuk düz tabanlık", "serebral palsi ortezi"],
     featured: false,
     coverColor: "#6c3483",
-    coverImage: "https://images.unsplash.com/photo-1530028838-3285e8c8a2a0?w=1200&q=80&auto=format&fit=crop",
+    coverImage: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80&auto=format&fit=crop",
     sections: [
       {
         id: "cocuklarda-ortez-genel",
@@ -629,7 +629,7 @@ export const BLOG_POSTS: BlogPost[] = [
     keywords: ["sgk ortez protez başvuru", "sgk protez nasıl alınır", "sgk cihaz", "ortez protez devlet katkısı", "sut ortez"],
     featured: true,
     coverColor: "#1a3a1a",
-    coverImage: "https://images.unsplash.com/photo-1631815588090-d4bfecbee44c?w=1200&q=80&auto=format&fit=crop",
+    coverImage: "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=1200&q=80&auto=format&fit=crop",
     sections: [
       {
         id: "genel-cerceve",

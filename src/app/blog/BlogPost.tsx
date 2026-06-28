@@ -67,6 +67,7 @@ export default function BlogPostPage() {
 
   useEffect(() => {
     if (!post) return;
+    window.scrollTo(0, 0);
     document.title = `${post.title} | İstanbul Ortez Protez Kütahya`;
     const desc = document.querySelector('meta[name="description"]');
     if (desc) desc.setAttribute("content", post.metaDescription);
@@ -148,7 +149,7 @@ export default function BlogPostPage() {
       <header className="sticky top-1 z-50 bg-white/95 border-b border-border backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <img src="/logo.svg" alt="İstanbul Ortez Protez" className="h-10" />
+            <img src="/logo.svg" alt="İstanbul Ortez Protez" className="h-14" />
           </Link>
           <div className="hidden md:flex items-center gap-3 text-sm text-muted-foreground font-semibold">
             <Link to="/" className="hover:text-primary transition-colors">Ana Sayfa</Link>
@@ -213,6 +214,11 @@ export default function BlogPostPage() {
                 <TableOfContents sections={tocItems} activeId={activeId} />
               </div>
             </details>
+
+            {/* Cover image */}
+            <div className="mb-10 rounded-2xl overflow-hidden border border-border shadow-sm">
+              <img src={post.coverImage} alt={post.title} className="w-full h-auto object-cover" />
+            </div>
 
             {/* Sections */}
             {post.sections.map((section) => (

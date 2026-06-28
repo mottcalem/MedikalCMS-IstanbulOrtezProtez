@@ -31,7 +31,7 @@ export default function BlogPage() {
       <header className="sticky top-0 z-50 bg-white/95 border-b border-border backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <img src="/logo.svg" alt="İstanbul Ortez Protez" className="h-10" />
+            <img src="/logo.svg" alt="İstanbul Ortez Protez" className="h-14" />
           </Link>
           <nav className="hidden md:flex items-center gap-6 text-sm font-semibold text-muted-foreground">
             <Link to="/#hizmetler" className="hover:text-primary transition-colors">Hizmetlerimiz</Link>
