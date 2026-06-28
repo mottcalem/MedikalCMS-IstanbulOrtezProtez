@@ -257,8 +257,13 @@ function SectionBadge({ text, light = false }: { text: string; light?: boolean }
       className={`inline-flex items-center text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4 ${
         light
           ? "bg-white/15 text-white border border-white/25"
-          : "bg-accent/10 text-accent border border-accent/20"
+          : "border"
       }`}
+      style={light ? {} : {
+        background: "rgba(10,173,168,0.12)",
+        color: "#087a76",
+        borderColor: "rgba(10,173,168,0.35)",
+      }}
     >
       {text}
     </span>
