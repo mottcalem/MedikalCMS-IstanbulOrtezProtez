@@ -1078,7 +1078,7 @@ function Blog() {
 
         <div className="text-center mt-10">
           <a
-            href="#blog"
+            href="/blog"
             className="inline-flex items-center gap-2 bg-white border border-border hover:bg-primary hover:text-white hover:border-primary text-foreground font-semibold px-6 py-3 rounded-xl transition-all duration-200 text-sm"
           >
             Tüm Blog Yazılarını Gör <ArrowRight className="w-4 h-4" />
