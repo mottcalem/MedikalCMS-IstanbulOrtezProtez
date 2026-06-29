@@ -87,7 +87,7 @@ const SERVICE_CATEGORIES = [
 ];
 
 const WHY_US = [
-  { icon: Award, title: "Uzman Kadro", desc: "15+ yıl deneyimli sertifikalı ortez-protez uzmanlarımız yanınızda." },
+  { icon: Award, title: "Uzman Kadro", desc: "20+ yıl deneyimli sertifikalı ortez-protez uzmanlarımız yanınızda." },
   { icon: Cpu, title: "Son Teknoloji", desc: "3D tarama, CAD/CAM ve mikroişlemci sistemleriyle en ileri üretim." },
   { icon: HeartHandshake, title: "Kişiye Özel Üretim", desc: "Her hastanın anatomisine özel tasarım ve üretim süreci." },
   { icon: Shield, title: "SGK Destek Süreçleri", desc: "SGK anlaşmalı merkez, tüm bürokratik süreçleri biz yönetiriz." },
@@ -105,7 +105,7 @@ const STEPS = [
 ];
 
 const STATS = [
-  { value: 2500, suffix: "+", label: "Mutlu Hasta" },
+  { value: 2500, suffix: "+", label: "Başarılı Uygulama" },
   { value: 15, suffix: "+", label: "Yıllık Deneyim" },
   { value: 5000, suffix: "+", label: "Başarılı Uygulama" },
   { value: 99, suffix: "%", label: "Hasta Memnuniyeti" },
@@ -428,9 +428,9 @@ function Hero() {
 
             <div className="grid grid-cols-3 gap-8">
               {[
-                { v: "2500+", l: "Mutlu Hasta" },
-                { v: "15+", l: "Yıl Deneyim" },
-                { v: "99%", l: "Memnuniyet" },
+                { v: "2500+", l: "Başarılı Uygulama" },
+                { v: "20+", l: "Yıl Deneyim" },
+                { v: "Uzman", l: "Ortez & Protez Ekibi" },
               ].map((s) => (
                 <div key={s.l} className="pl-4" style={{ borderLeft: "2px solid rgba(10,173,168,0.5)" }}>
                   <div
@@ -510,7 +510,7 @@ function About() {
               SGK anlaşmalı kurumumuzda alt ve üst ekstremite protezleri, çeşitli ortez sistemleri ve rehabilitasyon hizmetleri kapsamlı bir bütünlük içinde sunulmaktadır. Her hasta için bütünsel bir yaklaşım benimseyerek, en uygun çözümü birlikte planlıyoruz.
             </p>
             <div className="flex flex-wrap gap-3">
-              {["SGK Anlaşmalı", "ISO Sertifikalı", "15+ Yıl Deneyim", "Ücretsiz Danışma"].map((tag) => (
+              {["SGK Anlaşmalı", "ISO Sertifikalı", "20+ Yıl Deneyim", "Ücretsiz Danışma"].map((tag) => (
                 <span
                   key={tag}
                   className="text-xs font-bold text-primary bg-secondary border border-primary/15 px-3 py-1.5 rounded-full"
@@ -540,7 +540,7 @@ function About() {
               </div>
               <div>
                 <div className="text-xs text-muted-foreground">Sektörde</div>
-                <div className="font-bold text-foreground text-sm" style={{ fontFamily: "Manrope, sans-serif" }}>15+ Yıllık Deneyim</div>
+                <div className="font-bold text-foreground text-sm" style={{ fontFamily: "Manrope, sans-serif" }}>20+ Yıllık Deneyim</div>
               </div>
             </div>
           </div>
