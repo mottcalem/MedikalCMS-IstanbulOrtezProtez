@@ -878,43 +878,7 @@ function PatientProcess() {
   );
 }
 
-// ─── Stats ────────────────────────────────────────────────────────────────────
 
-function StatCounter({ value, suffix, label, active }: {
-  value: number; suffix: string; label: string; active: boolean;
-}) {
-  const n = useCounter(value, active);
-  return (
-    <div className="text-center">
-      <div
-        className="text-5xl sm:text-6xl font-black text-white mb-2"
-        style={{ fontFamily: "Manrope, sans-serif" }}
-      >
-        {n}{suffix}
-      </div>
-      <div className="text-sm font-medium tracking-wide" style={{ color: "rgba(255,255,255,0.58)" }}>{label}</div>
-    </div>
-  );
-}
-
-function Stats() {
-  const { ref, inView } = useInView(0.3);
-  return (
-    <section className="py-20 relative overflow-hidden" style={{ background: "#123B6D" }}>
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-8 blur-3xl" style={{ background: "#0AADA8" }} />
-        <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full opacity-6 blur-3xl" style={{ background: "white" }} />
-      </div>
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div ref={ref} className="grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16">
-          {STATS.map((s) => (
-            <StatCounter key={s.label} value={s.value} suffix={s.suffix} label={s.label} active={inView} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 // ─── Testimonials ─────────────────────────────────────────────────────────────
 
