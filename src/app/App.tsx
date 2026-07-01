@@ -105,9 +105,10 @@ const STEPS = [
 ];
 
 const STATS = [
-  { value: 2500, suffix: "+", label: "Mutlu Hasta" },
-  { value: 20, suffix: "+", label: "Yıllık Deneyim" },
-  { value: 3000, suffix: "+", label: "Ortez & Protez Uygulaması" },
+  { value: 2500, suffix: "+", label: "Başarılı Uygulama" },
+  { value: 15, suffix: "+", label: "Yıllık Deneyim" },
+  { value: 5000, suffix: "+", label: "Başarılı Uygulama" },
+  { value: 99, suffix: "%", label: "Hasta Memnuniyeti" },
 ];
 
 const TESTIMONIALS = [
