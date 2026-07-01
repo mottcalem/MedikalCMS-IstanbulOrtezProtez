@@ -44,8 +44,9 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Erken Tedavi Neden Kritik Önem Taşır?",
         level: 2,
         content: [
-          "Çocuklarda iskelet sistemi henüz gelişim aşamasında olduğundan, orthopedik problemlerin erken tespiti ve tedavisi yaşam boyu sürecek sonuçları belirler. Erken dönemde başlanan ortez tedavisi, gelişmekte olan iskelet yapısını doğru yönlendirerek kalıcı düzeltme şansı sunar.",
-          "0-7 yaş arası dönem, iskelet gelişiminin en aktif olduğu dönemdir. Bu dönemde uygulanan ortez interventions, kemik ve eklem yapılarını şekillendirme potansiyeline sahiptir. Gecikmiş tedavi ise deformitelerin kalıcı hale gelmesine, cerrahi gereksinimin artmasına ve tedavi süresinin uzamasına yol açar.",
+          "Çocuklarda iskelet sistemi henüz gelişim aşamasında olduğundan, ortopedik problemlerin erken tespiti ve tedavisi yaşam boyu sürecek sonuçları belirler. Erken dönemde başlanan ortez tedavisi, gelişmekte olan iskelet yapısını doğru yönlendirerek kalıcı düzeltme şansı sunar.",
+          "0-7 yaş arası dönem, iskelet gelişiminin en aktif olduğu dönemdir. Bu dönemde uygulanan ortez müdahaleleri, kemik ve eklem yapılarını şekillendirme potansiyeline sahiptir. Gecikmiş tedavi ise deformitelerin kalıcı hale gelmesine, cerrahi gereksinimin artmasına ve tedavi süresinin uzamasına yol açar.",
+          "Çocuğunuzun ortopedik gelişimi konusunda endişeleriniz varsa, [İstanbul Ortez Protez](https://istanbulortezprotez.com/) uzman ekibiyle görüşerek erken değerlendirme yaptırabilirsiniz.",
         ],
       },
       {
@@ -55,8 +56,8 @@ export const BLOG_POSTS: BlogPost[] = [
         content: [
           "Çocukların motor gelişimi belirli kilometre taşlarını izler. Bu aşamalarda ortopedik değerlendirme, potansiyel sorunların erken saptanmasını sağlar.",
           "0-1 yaş: Baş kontrolü, oturma, emekleme ve ayakta durma becerilerinin geliştiği dönem. Bu aşamada kalça displazisi, tortikollis ve konjenital ayak deformiteleri taraması yapılmalıdır.",
-          "1-3 yaş: İlk adımların atıldığı, yürüyüş paterninin oluştuğu kritik dönem. Düz tabanlık, içe yürüyüş ve varus/valgus deformiteleri bu dönemde değerlendirilir.",
-          "3-7 yaş: Koşma, zıplama ve karmaşık motor aktivitelerin geliştiği dönem. Skolyoz taraması, diz ve ayak bileği problemleri izlenmelidir.",
+          "1-3 yaş: İlk adımların atıldığı, yürüyüş paterninin oluştuğu kritik dönem. Düz tabanlık, içe yürüyüş ve varus/valgus deformiteleri bu dönemde değerlendirilir. Düz tabanlık tedavisi hakkında detaylı bilgi için [FootBalance ortopedik tabanlık](https://istanbulortezprotez.com/blog/footbalance-ortopedik-tabanlik-kimlere-uygun) yazımızı inceleyebilirsiniz.",
+          "3-7 yaş: Koşma, zıplama ve karmaşık motor aktivitelerin geliştiği dönem. Skolyoz taraması, diz ve ayak bileği problemleri izlenmelidir. Skolyoz tedavisinde korse kullanımı hakkında [omurga ortezi ve korse çeşitleri](https://istanbulortezprotez.com/blog/omurga-ortezi-korse-turleri-kullanim) yazımızdan bilgi alabilirsiniz.",
         ],
       },
       {
@@ -89,8 +90,17 @@ export const BLOG_POSTS: BlogPost[] = [
         level: 2,
         content: [
           "İstanbul Ortez Protez Kütahya merkezimizde çocuk ortezleri için özel bir yaklaşım benimsenmektedir. Çocukların büyüme sürecini izleyerek, gelişim dönemine uygun tedavi planları hazırlanmaktadır.",
-          "Merkezimizde pediatrik AFO, KAFO, skolyoz korseleri, SMO (supra-malleolar orthosis), UCBL tabanlıklar ve düz tabanlık tabanlıklar kişiye özel üretilmektedir. Çocuk hastalarımıza ücretsiz büyüme takibi ve periyodik kontrol hizmeti sunulmaktadır.",
-          "Randevu ve bilgi için: 0274 226 07 17 veya WhatsApp hattımızdan ulaşabilirsiniz.",
+          "Merkezimizde pediatrik AFO, KAFO, skolyoz korseleri, SMO (supra-malleolar orthosis), UCBL tabanlıklar ve düz tabanlık tabanlıklar kişiye özel üretilmektedir. Çocuk hastalarımıza ücretsiz büyüme takibi ve periyodik kontrol hizmeti sunulmaktadır. Protez hizmetlerimiz hakkında bilgi almak için [Kütahya'da alt ekstremite protezi rehberi](https://istanbulortezprotez.com/blog/kutahyada-alt-ekstremite-protezi-yaptirmayi-dusunenler-icin-rehber) yazımızı inceleyebilirsiniz.",
+        ],
+      },
+      {
+        id: "ucretsiz-randevu",
+        heading: "Ücretsiz Ön Değerlendirme Randevusu",
+        level: 2,
+        content: [
+          "Çocuğunuzun ortopedik gelişimi konusunda endişeleriniz varsa, uzman ekibimizle ücretsiz ön değerlendirme randevusu alabilirsiniz. Kütahya merkezimizde yapılan değerlendirmede çocuğunuzun durumu detaylı incelenerek en uygun tedavi planı belirlenmektedir.",
+          "Randevu almak için WhatsApp hattımızdan bize ulaşabilirsiniz: [WhatsApp ile İletişim](https://wa.me/905543098070) veya 0274 226 07 17 numaralı telefondan arayabilirsiniz. Tüm sorularınızı yanıtlamaktan memnuniyet duyarız.",
+          "Merkezimiz SGK anlaşmalı olup, çocuk ortez tedavisi için gerekli SGK süreçlerinde de size rehberlik etmektedir. SGK başvuru süreci hakkında detaylı bilgi için [SGK anlaşmalı protez ve ortez hizmeti](https://istanbulortezprotez.com/blog/kutahyada-sgk-anlasmali-protez-ortez-hizmeti-nasil-alinir) yazımızı inceleyebilirsiniz.",
         ],
       },
     ],

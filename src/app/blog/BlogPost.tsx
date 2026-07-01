@@ -7,6 +7,38 @@ function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" });
 }
 
+function renderContent(text: string) {
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts: (string | React.ReactNode)[] = [];
+  let lastIndex = 0;
+  let match;
+
+  while ((match = linkRegex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    parts.push(
+      <a
+        key={match.index}
+        href={match[2]}
+        target={match[2].startsWith("http") ? "_blank" : undefined}
+        rel={match[2].startsWith("http") ? "noopener noreferrer" : undefined}
+        className="font-semibold hover:underline"
+        style={{ color: "#0AADA8" }}
+      >
+        {match[1]}
+      </a>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+
+  return parts.length > 0 ? parts : text;
+}
+
 function ReadingProgress() {
   const [pct, setPct] = useState(0);
   useEffect(() => {
@@ -234,7 +266,7 @@ export default function BlogPostPage() {
                 )}
                 {section.content.map((para, i) => (
                   <p key={i} className="text-base leading-[1.85] text-muted-foreground mb-4">
-                    {para}
+                    {renderContent(para)}
                   </p>
                 ))}
               </section>
