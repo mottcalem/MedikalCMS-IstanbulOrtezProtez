@@ -104,6 +104,13 @@ const STEPS = [
   { n: 6, title: "Kontrol & Destek", desc: "Sürekli takip, bakım ve ücretsiz kontrol randevuları." },
 ];
 
+const STATS = [
+  { value: 2500, suffix: "+", label: "Başarılı Uygulama" },
+  { value: 15, suffix: "+", label: "Yıllık Deneyim" },
+  { value: 5000, suffix: "+", label: "Başarılı Uygulama" },
+  { value: 99, suffix: "%", label: "Hasta Memnuniyeti" },
+];
+
 const TESTIMONIALS = [
   {
     name: "Mehmet Yılmaz",
