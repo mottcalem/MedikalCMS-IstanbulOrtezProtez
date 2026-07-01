@@ -108,7 +108,6 @@ const STATS = [
   { value: 2500, suffix: "+", label: "Mutlu Hasta" },
   { value: 20, suffix: "+", label: "Yıllık Deneyim" },
   { value: 3000, suffix: "+", label: "Ortez & Protez Uygulaması" },
-  { value: 17, suffix: "farklı", label: "Ortez & Protez Çözümü" },
 ];
 
 const TESTIMONIALS = [
