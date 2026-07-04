@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import { Clock, Tag, ChevronRight, Search, Phone, MessageCircle } from "lucide-react";
 import { BLOG_POSTS, BLOG_CATEGORIES } from "./blogData";
+import { useCanonical } from "../hooks/useCanonical";
 
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" });
@@ -10,6 +11,8 @@ function formatDate(iso: string) {
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState("Tümü");
   const [query, setQuery] = useState("");
+
+  useCanonical();
 
   useEffect(() => {
     document.title = "Blog | Ortez Protez & Rehabilitasyon — İstanbul Ortez Protez Kütahya";

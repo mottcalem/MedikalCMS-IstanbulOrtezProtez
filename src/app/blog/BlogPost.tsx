@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { Link, useParams, Navigate } from "react-router";
 import { Clock, Tag, ChevronRight, Phone, MessageCircle, ArrowUp, Calendar, User } from "lucide-react";
 import { getPostBySlug, getRelatedPosts } from "./blogData";
+import { useCanonical } from "../hooks/useCanonical";
 
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" });
@@ -97,21 +98,14 @@ export default function BlogPostPage() {
   const [showBack, setShowBack] = useState(false);
   const observerRef = useRef<IntersectionObserver | null>(null);
 
+  useCanonical(post ? `/blog/${post.slug}` : undefined);
+
   useEffect(() => {
     if (!post) return;
     window.scrollTo(0, 0);
     document.title = `${post.title} | İstanbul Ortez Protez Kütahya`;
     const desc = document.querySelector('meta[name="description"]');
     if (desc) desc.setAttribute("content", post.metaDescription);
-
-    // Canonical
-    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
-    canonical.href = `https://istanbulortezprotez.com/blog/${post.slug}`;
 
     // JSON-LD
     const schema = {

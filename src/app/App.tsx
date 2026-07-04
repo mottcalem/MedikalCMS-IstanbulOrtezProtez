@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Menu, X, Phone, MessageCircle, ChevronDown, ChevronUp, ChevronLeft, ChevronRight, Star, MapPin, Mail, Clock, ArrowUp, CircleCheck as CheckCircle, Award, Zap, Shield, Activity, Cpu, Scan, Wrench, HeartHandshake, ArrowRight, Baby, Dumbbell, Heart, Settings, RefreshCw, FileText, Calendar } from "lucide-react";
 import { BLOG_POSTS as ALL_BLOG_POSTS } from "./blog/blogData";
+import { useCanonical } from "./hooks/useCanonical";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
@@ -1384,6 +1385,7 @@ function FloatingButtons({ scrollY }: { scrollY: number }) {
 // ─── App ──────────────────────────────────────────────────────────────────────
 
 export default function App() {
+  useCanonical();
   const scrollY = useScrollY();
 
   return (

@@ -1,6 +1,8 @@
 import { ArrowLeft, Phone, MessageCircle } from "lucide-react";
+import { useCanonical } from "./hooks/useCanonical";
 
 function LegalLayout({ title, children }: { title: string; children: React.ReactNode }) {
+  useCanonical();
   return (
     <div className="min-h-screen bg-white" style={{ fontFamily: "Inter, sans-serif" }}>
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
