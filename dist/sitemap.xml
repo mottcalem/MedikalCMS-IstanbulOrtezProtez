@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Ana Sayfalar -->
   <url>
     <loc>https://istanbulortezprotez.com/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://istanbulortezprotez.com/"/>
   </url>
 
   <url>
@@ -17,6 +16,7 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Blog Yazıları -->
   <url>
     <loc>https://istanbulortezprotez.com/blog/kutahyada-cocuklar-icin-ortez-tedavisi-neden-erken-baslamalidir</loc>
     <lastmod>2026-07-01</lastmod>
@@ -129,6 +129,7 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Yasal Sayfalar -->
   <url>
     <loc>https://istanbulortezprotez.com/kvkk</loc>
     <lastmod>2026-06-27</lastmod>
