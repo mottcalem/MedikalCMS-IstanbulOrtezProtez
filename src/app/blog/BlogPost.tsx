@@ -103,7 +103,7 @@ export default function BlogPostPage() {
   useEffect(() => {
     if (!post) return;
     window.scrollTo(0, 0);
-    document.title = `${post.title} | İstanbul Ortez Protez Kütahya`;
+    document.title = `${post.title} | Arıkan Ortopedi - Ortez & Protez Kütahya`;
     const desc = document.querySelector('meta[name="description"]');
     if (desc) desc.setAttribute("content", post.metaDescription);
 
@@ -116,8 +116,15 @@ export default function BlogPostPage() {
       author: { "@type": "Organization", name: post.author },
       publisher: {
         "@type": "LocalBusiness",
-        name: "İstanbul Ortez Protez",
-        address: { "@type": "PostalAddress", addressLocality: "Kütahya", addressCountry: "TR" },
+        name: "Arıkan Ortopedi - Ortez & Protez",
+        telephone: ["+90-274-600-03-43", "+90-553-666-03-43", "+90-553-849-90-35"],
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Evliya Çelebi Mah. Eken Paşa Cd. No:13/E, Şehir Hastanesi Yanı",
+          addressLocality: "Kütahya",
+          addressRegion: "Kütahya",
+          addressCountry: "TR",
+        },
       },
       datePublished: post.publishedAt,
       dateModified: post.updatedAt || post.publishedAt,
@@ -175,7 +182,7 @@ export default function BlogPostPage() {
       <header className="sticky top-1 z-50 bg-white/95 border-b border-border backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <img src="/logo.svg" alt="İstanbul Ortez Protez" className="h-14" />
+            <img src="/arikan-logo.png" alt="Arıkan Ortopedi - Ortez & Protez" className="h-14 w-auto object-contain" />
           </Link>
           <div className="hidden md:flex items-center gap-3 text-sm text-muted-foreground font-semibold">
             <Link to="/" className="hover:text-primary transition-colors">Ana Sayfa</Link>
@@ -184,7 +191,7 @@ export default function BlogPostPage() {
             <ChevronRight className="w-3.5 h-3.5" />
             <span className="text-foreground truncate max-w-[200px]">{post.title}</span>
           </div>
-          <a href="https://wa.me/905543098070" target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/905536660343" target="_blank" rel="noopener noreferrer"
             className="flex items-center gap-2 text-white text-sm font-bold px-4 py-2 rounded-xl hover:-translate-y-0.5 transition-all"
             style={{ background: "#25D366" }}>
             <MessageCircle className="w-4 h-4" /> WhatsApp
@@ -285,14 +292,14 @@ export default function BlogPostPage() {
                 Kütahya merkezimizde uzmanlarımız sorularınızı yanıtlayarak size en uygun çözümü belirler.
               </p>
               <div className="flex flex-wrap gap-3">
-                <a href="https://wa.me/905543098070" target="_blank" rel="noopener noreferrer"
+                <a href="https://wa.me/905536660343" target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-2 bg-white font-bold text-sm px-5 py-2.5 rounded-xl hover:-translate-y-0.5 transition-transform"
                   style={{ color: "#123B6D" }}>
                   <MessageCircle className="w-4 h-4" /> WhatsApp ile Randevu
                 </a>
-                <a href="tel:+902742260717"
+                <a href="tel:+902746000343"
                   className="flex items-center gap-2 bg-white/15 border border-white/30 text-white font-bold text-sm px-5 py-2.5 rounded-xl hover:-translate-y-0.5 transition-transform">
-                  <Phone className="w-4 h-4" /> 0274 226 07 17
+                  <Phone className="w-4 h-4" /> 0274 600 03 43
                 </a>
               </div>
             </div>
@@ -332,14 +339,14 @@ export default function BlogPostPage() {
               <div className="rounded-2xl p-6 text-white text-center" style={{ background: "linear-gradient(135deg, #123B6D 0%, #0AADA8 100%)" }}>
                 <p className="font-extrabold text-base mb-1" style={{ fontFamily: "Manrope, sans-serif" }}>Ücretsiz Değerlendirme</p>
                 <p className="text-xs mb-4" style={{ color: "rgba(255,255,255,0.78)" }}>Kütahya merkezimizde uzmanlarımızla görüşün.</p>
-                <a href="https://wa.me/905543098070" target="_blank" rel="noopener noreferrer"
+                <a href="https://wa.me/905536660343" target="_blank" rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 bg-white font-bold text-sm px-4 py-2.5 rounded-xl hover:-translate-y-0.5 transition-transform mb-2 w-full"
                   style={{ color: "#123B6D" }}>
                   <MessageCircle className="w-4 h-4" /> WhatsApp
                 </a>
-                <a href="tel:+902742260717"
+                <a href="tel:+902746000343"
                   className="flex items-center justify-center gap-2 text-white/90 font-bold text-sm hover:text-white transition-colors">
-                  <Phone className="w-4 h-4" /> 0274 226 07 17
+                  <Phone className="w-4 h-4" /> 0274 600 03 43
                 </a>
               </div>
 
@@ -378,7 +385,7 @@ export default function BlogPostPage() {
             <Link to="/blog" className="font-bold text-foreground hover:text-primary transition-colors">← Blog</Link>
             <Link to="/" className="hover:text-primary transition-colors">Ana Sayfa</Link>
           </div>
-          <p>© {new Date().getFullYear()} İstanbul Ortez Protez — Kütahya</p>
+          <p>© {new Date().getFullYear()} Arıkan Ortopedi - Ortez & Protez — Kütahya</p>
         </div>
       </footer>
     </div>

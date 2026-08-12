@@ -11,12 +11,12 @@ function LegalLayout({ title, children }: { title: string; children: React.React
             <ArrowLeft className="w-4 h-4" />
             Ana Sayfa
           </a>
-          <img src="/logo.svg" alt="İstanbul Ortez Protez" className="h-10 w-auto" />
+          <img src="/arikan-logo.png" alt="Arıkan Ortopedi - Ortez & Protez" className="h-10 w-auto object-contain" />
           <div className="flex items-center gap-3">
-            <a href="tel:+902742260717" className="hidden sm:flex items-center gap-1.5 text-xs font-semibold text-primary">
-              <Phone className="w-3.5 h-3.5" /> 0274 226 07 17
+            <a href="tel:+902746000343" className="hidden sm:flex items-center gap-1.5 text-xs font-semibold text-primary">
+              <Phone className="w-3.5 h-3.5" /> 0274 600 03 43
             </a>
-            <a href="https://wa.me/905543098070" className="flex items-center gap-1.5 text-xs font-bold text-white bg-green-500 px-3 py-1.5 rounded-lg">
+            <a href="https://wa.me/905536660343" className="flex items-center gap-1.5 text-xs font-bold text-white bg-green-500 px-3 py-1.5 rounded-lg">
               <MessageCircle className="w-3.5 h-3.5" /> WhatsApp
             </a>
           </div>
@@ -36,7 +36,7 @@ function LegalLayout({ title, children }: { title: string; children: React.React
       </main>
 
       <footer className="border-t border-gray-200 mt-16 py-8 text-center text-xs text-gray-400">
-        <p>© 2026 İstanbul Ortez Protez. Tüm hakları saklıdır.</p>
+        <p>© 2026 Arıkan Ortopedi - Ortez & Protez. Tüm hakları saklıdır.</p>
         <div className="flex justify-center gap-6 mt-3">
           <a href="/kvkk" className="hover:text-gray-600">KVKK</a>
           <a href="/gizlilik-politikasi" className="hover:text-gray-600">Gizlilik</a>
@@ -57,7 +57,7 @@ export function KVKK() {
         <h2 className="text-lg font-bold text-gray-900 mb-3">1. Veri Sorumlusunun Kimliği</h2>
         <p>
           6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca, kişisel verileriniz; veri sorumlusu sıfatıyla
-          <strong> İstanbul Ortez Protez</strong> (Alipaşa Mah. Fuatpaşa Cad. No:23/A, Kütahya) tarafından aşağıda açıklanan
+          <strong> Kütahya Arıkan Ortopedi Ortez Protez Merkezi</strong> (Evliya Çelebi Mah. Eken Paşa Cd. No:13/E, Şehir Hastanesi Yanı, Kütahya) tarafından aşağıda açıklanan
           kapsamda işlenmektedir.
         </p>
       </section>
@@ -118,8 +118,8 @@ export function KVKK() {
           <li>Zarara uğramanız halinde tazminat talep etme</li>
         </ul>
         <p className="mt-3">
-          Bu haklarınızı kullanmak için <strong>istanbulmedikal@msn.com</strong> adresine veya
-          Alipaşa Mah. Fuatpaşa Cad. No:23/A, Kütahya adresine yazılı başvuruda bulunabilirsiniz.
+          Bu haklarınızı kullanmak için <strong>info@arikanortopedi.com</strong> adresine veya
+          Evliya Çelebi Mah. Eken Paşa Cd. No:13/E, Şehir Hastanesi Yanı, Kütahya adresine yazılı başvuruda bulunabilirsiniz.
         </p>
       </section>
     </LegalLayout>
@@ -134,7 +134,7 @@ export function GizlilikPolitikasi() {
       <section>
         <h2 className="text-lg font-bold text-gray-900 mb-3">1. Genel Bilgi</h2>
         <p>
-          İstanbul Ortez Protez olarak kullanıcılarımızın gizliliğine büyük önem veriyoruz. Bu Gizlilik Politikası,
+          Kütahya Arıkan Ortopedi Ortez Protez Merkezi olarak kullanıcılarımızın gizliliğine büyük önem veriyoruz. Bu Gizlilik Politikası,
           web sitemizi ziyaret ettiğinizde hangi bilgilerin toplandığını, bu bilgilerin nasıl kullanıldığını ve korunduğunu
           açıklamaktadır.
         </p>
@@ -189,7 +189,7 @@ export function GizlilikPolitikasi() {
         <h2 className="text-lg font-bold text-gray-900 mb-3">7. İletişim</h2>
         <p>
           Gizlilik politikamıza ilişkin sorularınız için{" "}
-          <a href="mailto:istanbulmedikal@msn.com" className="text-primary underline">istanbulmedikal@msn.com</a>{" "}
+          <a href="mailto:info@arikanortopedi.com" className="text-primary underline">info@arikanortopedi.com</a>{" "}
           adresine yazabilirsiniz.
         </p>
       </section>
@@ -282,7 +282,7 @@ export function KullanimKosullari() {
       <section>
         <h2 className="text-lg font-bold text-gray-900 mb-3">2. Hizmetlerin Kapsamı</h2>
         <p>
-          İstanbul Ortez Protez web sitesi; merkezimizin sunduğu ortez ve protez hizmetlerine ilişkin genel bilgilendirme
+          Arıkan Ortopedi - Ortez & Protez web sitesi; merkezimizin sunduğu ortez ve protez hizmetlerine ilişkin genel bilgilendirme
           amacıyla hazırlanmıştır. Web sitesindeki içerikler tıbbi tavsiye niteliği taşımamaktadır; sağlık kararlarınız
           için mutlaka uzman hekim görüşü alınız.
         </p>
@@ -291,7 +291,7 @@ export function KullanimKosullari() {
       <section>
         <h2 className="text-lg font-bold text-gray-900 mb-3">3. Fikri Mülkiyet Hakları</h2>
         <p>
-          Bu web sitesinde yer alan tüm içerikler (metin, görsel, logo, tasarım ve diğer materyaller) İstanbul Ortez Protez'e
+          Bu web sitesinde yer alan tüm içerikler (metin, görsel, logo, tasarım ve diğer materyaller) Arıkan Ortopedi - Ortez & Protez'e
           aittir ve telif hakkı yasalarıyla korunmaktadır. Yazılı izin alınmadan kopyalanamaz, çoğaltılamaz veya dağıtılamaz.
         </p>
       </section>
@@ -312,7 +312,7 @@ export function KullanimKosullari() {
         <p>
           Web sitesindeki bilgilerin güncelliği ve doğruluğu konusunda azami özen gösterilmekte olmakla birlikte, içeriğin
           eksiksizliği veya doğruluğu konusunda açık ya da zımni herhangi bir garanti verilmemektedir. Siteden edinilen
-          bilgilere dayanarak alınan kararlar sonucunda oluşabilecek zararlardan İstanbul Ortez Protez sorumlu tutulamaz.
+          bilgilere dayanarak alınan kararlar sonucunda oluşabilecek zararlardan Arıkan Ortopedi - Ortez & Protez sorumlu tutulamaz.
         </p>
       </section>
 
@@ -344,8 +344,8 @@ export function KullanimKosullari() {
         <h2 className="text-lg font-bold text-gray-900 mb-3">9. İletişim</h2>
         <p>
           Kullanım koşullarına ilişkin sorularınız için{" "}
-          <a href="mailto:istanbulmedikal@msn.com" className="text-primary underline">istanbulmedikal@msn.com</a>{" "}
-          adresine yazabilir veya <a href="tel:+902742260717" className="text-primary underline">0274 226 07 17</a> numaralı
+          <a href="mailto:info@arikanortopedi.com" className="text-primary underline">info@arikanortopedi.com</a>{" "}
+          adresine yazabilir veya <a href="tel:+902746000343" className="text-primary underline">0274 600 03 43</a> numaralı
           telefondan bize ulaşabilirsiniz.
         </p>
       </section>

@@ -280,9 +280,9 @@ function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-28">
           <a href="#anasayfa" className="flex items-center shrink-0">
-            <img src="/logo.svg" alt="İstanbul Ortez Protez" className="h-24 w-auto max-w-[260px]" />
+            <img src="/arikan-logo.png" alt="Arıkan Ortopedi - Ortez & Protez" className="h-20 w-auto max-w-[240px] object-contain" />
           </a>
 
           <nav className="hidden xl:flex items-center gap-0.5">
@@ -299,14 +299,14 @@ function Header() {
 
           <div className="hidden lg:flex items-center gap-2.5">
             <a
-              href="tel:+902742260717"
+              href="tel:+902746000343"
               className="flex items-center gap-2 text-[13px] font-bold text-primary bg-secondary border border-primary/15 px-4 py-2.5 rounded-xl hover:bg-primary hover:text-white transition-all duration-200"
             >
               <Phone className="w-4 h-4" />
               Hemen Ara
             </a>
             <a
-              href="https://wa.me/905543098070"
+              href="https://wa.me/905536660343"
               className="flex items-center gap-2 text-[13px] font-bold text-white bg-green-500 hover:bg-green-600 px-4 py-2.5 rounded-xl transition-all duration-200 shadow-md"
             >
               <MessageCircle className="w-4 h-4" />
@@ -339,13 +339,13 @@ function Header() {
             ))}
             <div className="flex gap-3 pt-3 border-t border-border mt-2">
               <a
-                href="tel:+902742260717"
+                href="tel:+902746000343"
                 className="flex-1 flex items-center justify-center gap-2 text-sm font-bold text-primary bg-secondary border border-primary/15 px-4 py-3 rounded-xl"
               >
                 <Phone className="w-4 h-4" /> Hemen Ara
               </a>
               <a
-                href="https://wa.me/905543098070"
+                href="https://wa.me/905536660343"
                 className="flex-1 flex items-center justify-center gap-2 text-sm font-bold text-white bg-green-500 px-4 py-3 rounded-xl"
               >
                 <MessageCircle className="w-4 h-4" /> WhatsApp
@@ -411,7 +411,7 @@ function Hero() {
                 <ArrowRight className="w-5 h-5" />
               </a>
               <a
-                href="https://wa.me/905543098070"
+                href="https://wa.me/905536660343"
                 className="inline-flex items-center gap-2.5 text-white font-semibold px-8 py-4 rounded-2xl border transition-all duration-200 hover:-translate-y-0.5 text-[15px]"
                 style={{ background: "rgba(255,255,255,0.1)", borderColor: "rgba(255,255,255,0.2)" }}
               >
@@ -497,12 +497,17 @@ function About() {
             >
               Kütahya'nın Güvenilir Ortez & Protez Merkezi
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-5">
-              2009 yılından bu yana Kütahya'da hizmet veren merkezimiz, sertifikalı uzman kadrosu ve son teknoloji altyapısıyla 2500'den fazla hastaya kişiye özel çözümler sunmuştur.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-8">
-              SGK anlaşmalı kurumumuzda alt ve üst ekstremite protezleri, çeşitli ortez sistemleri ve rehabilitasyon hizmetleri kapsamlı bir bütünlük içinde sunulmaktadır. Her hasta için bütünsel bir yaklaşım benimseyerek, en uygun çözümü birlikte planlıyoruz.
-            </p>
+<p className="text-muted-foreground leading-relaxed mb-8">
+  <strong>2009 yılından bu yana Kütahya’da hizmet veren Arıkan Ortopedi - Ortez &amp; Protez</strong>, kişiye özel ortez ve protez çözümleriyle danışanlarının yaşam kalitesini ve hareket özgürlüğünü desteklemeyi amaçlamaktadır.
+</p>
+
+<p className="text-muted-foreground leading-relaxed mb-8">
+  Deneyimli ekibimiz ve güncel teknolojilerden yararlanan uygulama yaklaşımımızla; alt ve üst ekstremite protezleri, kişiye özel ortez uygulamaları, CNC tabanlık, AFO, KAFO, 3 boyutlu skolyoz korseleri ve uzun yürüme cihazları gibi farklı ihtiyaçlara yönelik çözümler sunuyoruz.
+</p>
+
+<p className="text-muted-foreground leading-relaxed mb-8">
+  Her bireyin ihtiyacının farklı olduğuna inanıyor; değerlendirme, ölçülendirme, üretim ve uygulama süreçlerini kişiye özel olarak planlıyoruz. <strong>Arıkan Ortopedi olarak amacımız, doğru uygulamayı güvenilir hizmet ve uzun yıllara dayanan deneyimle buluşturmaktır.</strong>
+</p>
             <div className="flex flex-wrap gap-3">
               {["SGK Anlaşmalı", "ISO Sertifikalı", "20+ Yıl Deneyim", "Ücretsiz Danışma"].map((tag) => (
                 <span
@@ -603,7 +608,7 @@ function Services() {
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
                 <a
-                  href="https://wa.me/905543098070"
+                  href="https://wa.me/905536660343"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -752,13 +757,13 @@ function FootBalance() {
               Ücretsiz ayak analizi için hemen randevu alın. SGK kapsamı hakkında bilgi alın.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              <a href="https://wa.me/905543098070" className="flex items-center gap-2 bg-white font-bold text-sm px-6 py-3 rounded-xl hover:-translate-y-0.5 transition-transform" style={{ color: "#123B6D" }}>
+              <a href="https://wa.me/905536660343" className="flex items-center gap-2 bg-white font-bold text-sm px-6 py-3 rounded-xl hover:-translate-y-0.5 transition-transform" style={{ color: "#123B6D" }}>
                 <MessageCircle className="w-4 h-4" />
                 WhatsApp ile Randevu
               </a>
-              <a href="tel:+902742260717" className="flex items-center gap-2 bg-white/15 border border-white/30 text-white font-bold text-sm px-6 py-3 rounded-xl hover:-translate-y-0.5 transition-transform">
+              <a href="tel:+902746000343" className="flex items-center gap-2 bg-white/15 border border-white/30 text-white font-bold text-sm px-6 py-3 rounded-xl hover:-translate-y-0.5 transition-transform">
                 <Phone className="w-4 h-4" />
-                0274 226 07 17
+                0274 600 03 43
               </a>
             </div>
           </div>
@@ -779,7 +784,7 @@ function WhyUs() {
         <SectionHeading
           badge="Neden Biz?"
           title="Farkımızı Hissedeceksiniz"
-          subtitle="İstanbul Ortez Protez olarak hasta odaklı yaklaşımımız ve teknik üstünlüğümüzle ayrışıyoruz."
+          subtitle="Arıkan Ortopedi - Ortez & Protez olarak hasta odaklı yaklaşımımız ve teknik üstünlüğümüzle ayrışıyoruz."
         />
         <div ref={ref} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {WHY_US.map((item, i) => {
@@ -1098,7 +1103,7 @@ function FAQ() {
             </div>
           </div>
           <a
-            href="https://wa.me/905543098070"
+            href="https://wa.me/905536660343"
             className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all duration-200 whitespace-nowrap"
           >
             <MessageCircle className="w-4 h-4" /> WhatsApp'ta Sor
@@ -1124,11 +1129,11 @@ function Contact() {
         <div className="grid lg:grid-cols-2 gap-10">
           <div className="h-[500px] rounded-3xl overflow-hidden border border-border shadow-sm">
             <iframe
-              title="İstanbul Ortez Protez Kütahya Klinik Konumu"
+              title="Arıkan Ortopedi - Ortez & Protez Kütahya Klinik Konumu"
               width="100%"
               height="100%"
               style={{ border: 0 }}
-              src="https://maps.google.com/maps?q=Alipaşa+Mah+Fuatpaşa+Cad+No+23+Kütahya+Türkiye&output=embed&z=15&hl=tr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3081.923513971461!2d29.9631!3d39.425854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c9470c0a8223f9%3A0xc4dae7929356e209!2sARIKAN%20ORTOPED%C4%B0%20K%C3%9CTAHYA%20ORTEZ%20PROTEZ%20YAPIM%20VE%20UYGULAMA%20MERKEZ%C4%B0!5e0!3m2!1str!2str!4v1786557774867!5m2!1str!2str"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -1138,9 +1143,9 @@ function Contact() {
           <div className="space-y-4">
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { icon: MapPin, label: "Adres", value: "Alipaşa Mah. Fuatpaşa Cad. No:23/A\nKütahya" },
-                { icon: Phone, label: "Telefon", value: "0274 226 07 17\n0554 309 80 70" },
-                { icon: Mail, label: "E-posta", value: "istanbulmedikal@msn.com" },
+                { icon: MapPin, label: "Adres", value: "Evliya Çelebi Mah. Eken Paşa Cd.\nNo:13/E, Şehir Hastanesi Yanı\nKütahya" },
+                { icon: Phone, label: "Telefon", value: "0274 600 03 43\n0553 666 03 43\n0553 849 90 35" },
+                { icon: Mail, label: "E-posta", value: "info@arikanortopedi.com" },
                 { icon: Clock, label: "Çalışma Saatleri", value: "Pzt–Cum: 08:00–18:00\nCumartesi: 09:00–14:00" },
               ].map((item) => {
                 const Icon = item.icon;
@@ -1168,7 +1173,7 @@ function Contact() {
             </div>
 
             <a
-              href="https://wa.me/905543098070"
+              href="https://wa.me/905536660343"
               className="flex items-center gap-4 text-white font-bold p-5 rounded-2xl transition-all duration-200 hover:-translate-y-0.5"
               style={{ background: "#22c55e", boxShadow: "0 6px 24px rgba(34,197,94,0.28)" }}
               aria-label="WhatsApp ile iletişime geçin"
@@ -1186,17 +1191,17 @@ function Contact() {
             </a>
 
             <a
-              href="tel:+902742260717"
+              href="tel:+902746000343"
               className="flex items-center gap-4 text-white font-bold p-5 rounded-2xl transition-all duration-200 hover:-translate-y-0.5"
               style={{ background: "#123B6D", boxShadow: "0 6px 24px rgba(18,59,109,0.22)" }}
-              aria-label="Hemen ara 0274 226 07 17"
+              aria-label="Hemen ara 0274 600 03 43"
             >
               <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ background: "rgba(255,255,255,0.15)" }}>
                 <Phone className="w-6 h-6" />
               </div>
               <div className="flex-1">
                 <div className="text-[15px]">Hemen Ara</div>
-                <div className="text-xs font-normal" style={{ color: "rgba(255,255,255,0.72)" }}>0274 226 07 17</div>
+                <div className="text-xs font-normal" style={{ color: "rgba(255,255,255,0.72)" }}>0274 600 03 43</div>
               </div>
               <ArrowRight className="w-5 h-5 opacity-70" />
             </a>
@@ -1217,7 +1222,7 @@ function Footer() {
 
           <div>
             <div className="mb-5">
-              <img src="/logo.svg" alt="İstanbul Ortez Protez" className="h-20 w-auto max-w-[220px]" style={{ filter: "brightness(0) invert(1)" }} />
+              <img src="/arikan-logo.png" alt="Arıkan Ortopedi - Ortez & Protez" className="h-20 w-auto max-w-[220px] object-contain" />
             </div>
             <p className="text-sm leading-relaxed mb-6" style={{ color: "rgba(255,255,255,0.52)" }}>
               15 yılı aşkın deneyimimizle Kütahya'nın lider ortez ve protez merkezi olarak, her hastamıza kişiye özel çözümler sunuyoruz.
@@ -1342,7 +1347,7 @@ function Footer() {
           style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
         >
           <p className="text-xs" style={{ color: "rgba(255,255,255,0.32)" }}>
-            © 2025 İstanbul Ortez Protez. Tüm hakları saklıdır.
+            © 2025 Arıkan Ortopedi - Ortez & Protez. Tüm hakları saklıdır.
           </p>
           <p className="text-[11px]" style={{ color: "rgba(255,255,255,0.22)" }}>
             Schema.org MedicalOrganization · TR · Kütahya
@@ -1370,7 +1375,7 @@ function FloatingButtons({ scrollY }: { scrollY: number }) {
       )}
 
       <a
-        href="https://wa.me/905543098070"
+        href="https://wa.me/905536660343"
         className="flex items-center gap-2.5 text-white font-bold px-4 py-3 rounded-2xl transition-all duration-200 hover:-translate-y-0.5"
         style={{ background: "#22c55e", boxShadow: "0 4px 20px rgba(34,197,94,0.35)" }}
         aria-label="WhatsApp ile iletişim"
@@ -1396,13 +1401,13 @@ export default function App() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "MedicalOrganization",
-            name: "İstanbul Ortez Protez",
-            description: "Kütahya'da kişiye özel ortez ve protez çözümleri sunan SGK anlaşmalı merkez.",
+            name: "Arıkan Ortopedi - Ortez & Protez",
+            description: "Kütahya Arıkan Ortopedi - Ortez & Protez ile kişiye özel ortez ve protez çözümleri sunan SGK anlaşmalı merkez.",
             url: "https://ortezprotez.com",
-            telephone: "+90-274-226-07-17",
+            telephone: ["+90-274-600-03-43", "+90-553-666-03-43", "+90-553-849-90-35"],
             address: {
               "@type": "PostalAddress",
-              streetAddress: "Alipaşa Mah. Fuatpaşa Cad. No:23/A",
+              streetAddress: "Evliya Çelebi Mah. Eken Paşa Cd. No:13/E, Şehir Hastanesi Yanı",
               addressLocality: "Kütahya",
               addressRegion: "Kütahya",
               addressCountry: "TR",

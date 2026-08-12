@@ -15,9 +15,9 @@ export default function BlogPage() {
   useCanonical();
 
   useEffect(() => {
-    document.title = "Blog | Ortez Protez & Rehabilitasyon — İstanbul Ortez Protez Kütahya";
+    document.title = "Blog | Ortez Protez & Rehabilitasyon — Arıkan Ortopedi - Ortez & Protez Kütahya";
     const desc = document.querySelector('meta[name="description"]');
-    if (desc) desc.setAttribute("content", "Ortez, protez, FootBalance tabanlık, SGK kapsamı ve rehabilitasyon hakkında uzman blog yazıları. Kütahya İstanbul Ortez Protez Merkezi.");
+    if (desc) desc.setAttribute("content", "Ortez, protez, FootBalance tabanlık, SGK kapsamı ve rehabilitasyon hakkında uzman blog yazıları. Kütahya Arıkan Ortopedi - Ortez & Protez Merkezi.");
   }, []);
 
   const filtered = BLOG_POSTS.filter((p) => {
@@ -34,7 +34,7 @@ export default function BlogPage() {
       <header className="sticky top-0 z-50 bg-white/95 border-b border-border backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <img src="/logo.svg" alt="İstanbul Ortez Protez" className="h-14" />
+            <img src="/arikan-logo.png" alt="Arıkan Ortopedi - Ortez & Protez" className="h-14 w-auto object-contain" />
           </Link>
           <nav className="hidden md:flex items-center gap-6 text-sm font-semibold text-muted-foreground">
             <Link to="/#hizmetler" className="hover:text-primary transition-colors">Hizmetlerimiz</Link>
@@ -42,10 +42,10 @@ export default function BlogPage() {
             <Link to="/#iletisim" className="hover:text-primary transition-colors">İletişim</Link>
           </nav>
           <div className="flex items-center gap-3">
-            <a href="tel:+902742260717" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-foreground hover:text-primary transition-colors">
-              <Phone className="w-4 h-4" /> 0274 226 07 17
+            <a href="tel:+902746000343" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-foreground hover:text-primary transition-colors">
+              <Phone className="w-4 h-4" /> 0274 600 03 43
             </a>
-            <a href="https://wa.me/905543098070" target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/905536660343" target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-2 text-white text-sm font-bold px-4 py-2 rounded-xl transition-all hover:-translate-y-0.5"
               style={{ background: "#25D366" }}>
               <MessageCircle className="w-4 h-4" /> WhatsApp
@@ -64,7 +64,7 @@ export default function BlogPage() {
             Ortez, Protez & Rehabilitasyon
           </h1>
           <p className="text-lg mb-8" style={{ color: "rgba(255,255,255,0.78)" }}>
-            Kütahya İstanbul Ortez Protez Merkezi uzman ekibinden güncel bilgiler, tedavi rehberleri ve SGK mevzuatı.
+            Kütahya Arıkan Ortopedi - Ortez & Protez Merkezi uzman ekibinden güncel bilgiler, tedavi rehberleri ve SGK mevzuatı.
           </p>
           {/* Arama */}
           <div className="relative max-w-lg mx-auto">
@@ -179,14 +179,14 @@ export default function BlogPage() {
             Kütahya merkezimizde ücretsiz ön değerlendirme için hemen randevu alın.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            <a href="https://wa.me/905543098070" target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/905536660343" target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-2 bg-white font-bold text-sm px-6 py-3 rounded-xl hover:-translate-y-0.5 transition-transform"
               style={{ color: "#123B6D" }}>
               <MessageCircle className="w-4 h-4" /> WhatsApp ile Randevu
             </a>
-            <a href="tel:+902742260717"
+            <a href="tel:+902746000343"
               className="flex items-center gap-2 bg-white/15 border border-white/30 text-white font-bold text-sm px-6 py-3 rounded-xl hover:-translate-y-0.5 transition-transform">
-              <Phone className="w-4 h-4" /> 0274 226 07 17
+              <Phone className="w-4 h-4" /> 0274 600 03 43
             </a>
           </div>
         </div>
@@ -196,7 +196,7 @@ export default function BlogPage() {
       <footer className="border-t border-border py-8 mt-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <Link to="/" className="font-bold text-foreground hover:text-primary transition-colors">← Ana Sayfaya Dön</Link>
-          <p>© {new Date().getFullYear()} İstanbul Ortez Protez — Kütahya</p>
+          <p>© {new Date().getFullYear()} Arıkan Ortopedi - Ortez & Protez — Kütahya</p>
         </div>
       </footer>
     </div>
