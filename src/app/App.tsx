@@ -424,7 +424,7 @@ function Hero() {
               {[
                 { v: "2500+", l: "Başarılı Uygulama" },
                 { v: "Uzman", l: "Ortez & Protez Ekibi" },
-                { v: "20+", l: "Yıllık Deneyim" },
+                { v: "Kişiye Özel", l: "Çözümler" },
               ].map((s) => (
                 <div key={s.l} className="pl-4" style={{ borderLeft: "2px solid rgba(10,173,168,0.5)" }}>
                   <div
