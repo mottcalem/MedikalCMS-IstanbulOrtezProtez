@@ -498,7 +498,7 @@ function About() {
               Kütahya'nın Güvenilir Ortez & Protez Merkezi
             </h2>
 <p className="text-muted-foreground leading-relaxed mb-8">
-  <strong>2009 yılından bu yana Kütahya’da hizmet veren Arıkan Ortopedi - Ortez &amp; Protez</strong>, kişiye özel ortez ve protez çözümleriyle danışanlarının yaşam kalitesini ve hareket özgürlüğünü desteklemeyi amaçlamaktadır.
+  <strong>2022 yılından bu yana Kütahya’da hizmet veren Arıkan Ortopedi - Ortez &amp; Protez</strong>, kişiye özel ortez ve protez çözümleriyle danışanlarının yaşam kalitesini ve hareket özgürlüğünü desteklemeyi amaçlamaktadır.
 </p>
 
 <p className="text-muted-foreground leading-relaxed mb-8">
@@ -1225,7 +1225,7 @@ function Footer() {
               <img src="/arikan-logo.png" alt="Arıkan Ortopedi - Ortez & Protez" className="h-20 w-auto max-w-[220px] object-contain" />
             </div>
             <p className="text-sm leading-relaxed mb-6" style={{ color: "rgba(255,255,255,0.52)" }}>
-              15 yılı aşkın deneyimimizle Kütahya'nın lider ortez ve protez merkezi olarak, her hastamıza kişiye özel çözümler sunuyoruz.
+              Kütahya'nın lider ortez ve protez merkezi olarak, her hastamıza kişiye özel çözümler sunuyoruz.
             </p>
             <div className="flex gap-2.5">
               {[
