@@ -1403,7 +1403,7 @@ export default function App() {
             "@type": "MedicalOrganization",
             name: "Arıkan Ortopedi - Ortez & Protez",
             description: "Kütahya Arıkan Ortopedi - Ortez & Protez ile kişiye özel ortez ve protez çözümleri sunan SGK anlaşmalı merkez.",
-            url: "https://ortezprotez.com",
+            url: "https://arikanortopedi.com",
             telephone: ["+90-274-600-03-43", "+90-553-666-03-43", "+90-553-849-90-35"],
             address: {
               "@type": "PostalAddress",

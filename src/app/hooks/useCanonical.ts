@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const SITE_ORIGIN = "https://ortezprotez.com";
+const SITE_ORIGIN = "https://arikanortopedi.com";
 
 function buildUrl(pathname: string): string {
   const normalized = pathname.endsWith("/") && pathname !== "/"
