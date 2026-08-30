@@ -25,6 +25,130 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "kutahya-afo-kisiye-ozel-ayak-ayak-bilegi-ortezi-rehberi",
+    title: "Kütahya AFO: Kişiye Özel Ayak ve Ayak Bileği Ortezi Rehberi",
+    excerpt: "AFO çeşitleri, kişiye özel üretim süreci, kullanım önerileri ve çocuklarda AFO takibi hakkında kapsamlı rehber.",
+    category: "Ortez",
+    tags: ["Kütahya AFO", "ayak bileği ortezi", "düşük ayak ortezi", "kişiye özel ortez", "çocuk AFO"],
+    readingTime: 10,
+    publishedAt: "2026-08-30",
+    author: "Arıkan Ortopedi - Ortez & Protez Uzman Ekibi",
+    metaDescription: "Kütahya'da kişiye özel AFO rehberi: AFO çeşitleri, kimlere uygulanır, ölçü ve üretim süreci, ayakkabı seçimi ve kullanım önerileri.",
+    keywords: ["kütahya afo", "kişiye özel afo", "ayak bileği ortezi", "düşük ayak ortezi", "çocuk afo kütahya"],
+    featured: true,
+    coverColor: "#0AADA8",
+    coverImage: "/kutahya-afo-ayak-bilegi-ortezi.png",
+    sections: [
+      {
+        id: "afo-nedir",
+        heading: "AFO Nedir?",
+        level: 2,
+        content: [
+          "AFO, İngilizce “Ankle-Foot Orthosis” ifadesinin kısaltmasıdır. Türkçede ayak-ayak bileği ortezi veya ayak bileği ortezi olarak adlandırılır. Diz altından başlayarak ayak ve ayak bileğini kapsayan bu yardımcı cihaz; ihtiyaç duyulan bölgeyi desteklemek, eklem hareketlerini kontrol etmek ve daha güvenli bir yürüme düzenine yardımcı olmak amacıyla tasarlanır.",
+          "Uygun şekilde planlanan bir AFO; ayak ve ayak bileğinin hizalanmasına, yürürken ayak ucunun yere takılma riskinin azaltılmasına, zayıf kas gruplarının desteklenmesine ve basma ile salınım evrelerinde hareket kontrolüne katkıda bulunabilir.",
+          "AFO bir hastalığı tek başına tedavi eden standart bir ürün değildir. Uygun model; hekim değerlendirmesi, reçete, kişinin anatomik özellikleri ve yürüme gereksinimleri dikkate alınarak belirlenmelidir. Genel ortez uygulamalarını daha yakından tanımak için [çocuklarda ortez kullanımı rehberimizi](/blog/cocuklarda-ortez-kullanimi-ne-zaman-gerekli) inceleyebilirsiniz.",
+        ],
+      },
+      {
+        id: "kimlere-onerilebilir",
+        heading: "Kütahya'da AFO Kimlere Önerilebilir?",
+        level: 2,
+        content: [
+          "AFO kullanımı çocuklarda ve yetişkinlerde farklı nedenlerle gündeme gelebilir. Hekim tarafından gerekli görüldüğünde düşük ayak, serebral palsi, inme sonrası hareket kayıpları, multipl skleroz, peroneal sinir hasarı, kas güçsüzlüğü, spastisite ve ayak bileği instabilitesi gibi durumlarda değerlendirilebilir.",
+          "Doğuştan veya sonradan gelişen ayak deformiteleri, travma ya da ameliyat sonrası destek ihtiyacı, yürüyüş sırasında ayak ucunun yere takılması ve çocuklardaki gelişimsel yürüme problemleri de değerlendirme nedenleri arasındadır.",
+          "Benzer belirtilere sahip kişilerde bile aynı AFO modeli uygun olmayabilir. Kas gücü, eklem hareket açıklığı, kas tonusu, yaş, kilo, aktivite düzeyi ve kullanılacak ayakkabı birlikte değerlendirilmelidir.",
+        ],
+      },
+      {
+        id: "kisiye-ozel-afo",
+        heading: "Kişiye Özel AFO Neden Önemlidir?",
+        level: 2,
+        content: [
+          "Ayak ve ayak bileğinin biçimi, hareket kapasitesi ve destek ihtiyacı kişiden kişiye değişir. Bu nedenle doğru ölçü; AFO'nun vücuda uyumu, kullanım konforu ve işlevi açısından önemlidir.",
+          "Kişiye özel AFO hazırlanırken yalnızca ayak numarası dikkate alınmaz. Baldır çevresi, ayak bileği yapısı, topuk pozisyonu, ayağın uzunluğu, deformitenin yönü ve yürüyüş sırasında ihtiyaç duyulan kontrol seviyesi de incelenir.",
+          "Uygun olmayan veya kontrol edilmeden kullanılan bir ortez baskı, sürtünme, ağrı ve yürüme güçlüğü oluşturabilir. Uygulama merkezi seçerken dikkat edilecek ölçütleri [Kütahya'da ortez ve protez merkezi seçimi yazımızda](/blog/kutahyada-ortez-protez-merkezi-secerken-nelere-dikkat-etmelisiniz) bulabilirsiniz.",
+        ],
+      },
+      {
+        id: "afo-cesitleri",
+        heading: "AFO Çeşitleri Nelerdir?",
+        level: 2,
+        content: [
+          "AFO tek bir modelden oluşmaz. Malzeme, sertlik ve hareket kontrolü bakımından farklı türleri bulunur. Solid AFO ayak bileği hareketini daha fazla sınırlandırırken eklemli AFO belirlenen yönde harekete izin verebilir.",
+          "Posterior Leaf Spring AFO salınım evresinde ayağın yukarı kaldırılmasına destek olmak üzere daha esnek tasarlanır. Karbon AFO hafif ve enerji geri dönüşü sağlayabilen bir seçenektir. GRAFO ise yer reaksiyon kuvvetinden yararlanarak diz kontrolüne de katkıda bulunmayı amaçlar. Diz bölgesine yönelik diğer seçenekleri [diz ortezi rehberimizde](/blog/diz-ortezi-cesitleri-kullanim-alanlari) bulabilirsiniz.",
+          "Pediatrik AFO ve DAFO modelleri çocukların büyümesi, kas tonusu, eklem hareketi ve gelişimsel ihtiyaçları dikkate alınarak hazırlanır. Model seçimi görünüm veya hafifliğe göre değil; reçete, muayene bulguları ve işlevsel hedeflere göre yapılmalıdır.",
+        ],
+      },
+      {
+        id: "afo-yapim-sureci",
+        heading: "Kütahya'da Kişiye Özel AFO Yapım Süreci",
+        level: 2,
+        content: [
+          "1. Reçete ve ihtiyaç değerlendirmesi: Hekim reçetesi ve sağlık bilgileri incelenir; günlük yaşam, yürüme güçlüğü ve ortezden beklenen işlev değerlendirilir. Reçete ve geri ödeme adımları için [SGK ile ortez-protez alma rehberimizi](/blog/sgk-ile-ortez-protez-nasil-alinir-adim-adim-rehber) okuyabilirsiniz.",
+          "2. Ayak ve yürüyüş değerlendirmesi: Ayakta duruş, basış, eklem hareketleri ve yürüyüş özellikleri gözlemlenir. Yaş, aktivite düzeyi ve ayakkabı tercihleri dikkate alınır.",
+          "3. Kişiye özel ölçü: Anatomik ölçüler bilgisayarlı yöntemlerle veya uygun klasik ölçü teknikleriyle kaydedilir; gerekli düzeltmeler modele aktarılır.",
+          "4. Üretim ve malzeme seçimi: Reçeteye göre termoplastik, karbon veya uygun başka bir malzeme seçilir. Ortezin sertliği, eklem yapısı ve kayışları kullanım amacına göre planlanır.",
+          "5. İlk prova: Topuğun yerleşimi, basınç noktaları, kayışların konumu ve ayakkabı uyumu kontrol edilerek gerekli düzenlemeler yapılır.",
+          "6. Yürüyüş kontrolü: Kullanıcı AFO ile yürütülür; gerekiyorsa açı, destek veya konfor düzenlemeleri gerçekleştirilir.",
+          "7. Kullanım ve takip: Takma, çıkarma, temizlik ve cilt kontrolü anlatılır. Çocuklarda büyüme, yetişkinlerde kullanım ve vücut yapısındaki değişiklikler nedeniyle düzenli kontrol gerekebilir.",
+        ],
+      },
+      {
+        id: "kullanimda-dikkat",
+        heading: "AFO Kullanırken Nelere Dikkat Edilmelidir?",
+        level: 2,
+        content: [
+          "Yeni bir AFO'ya alışma süresi kişiye göre değişebilir. Kullanım süresi, hekimin ve ortez-protez uzmanının önerdiği program doğrultusunda kademeli artırılmalıdır.",
+          "Topuğun ortezin yuvasına tam oturduğundan emin olun; önerilen çorap ve uygun genişlikte ayakkabı kullanın. Her kullanımdan sonra cildi, plastik parçaları, eklemleri, kayışları ve pedleri kontrol edin. Ortezi doğrudan ısı kaynağında kurutmayın; kendiniz kesmeyin, bükmeyin veya tamir etmeyin.",
+          "Hafif ve kısa süreli izler görülebilse de uzun süre geçmeyen kızarıklık, ağrı, yara veya su toplaması normal kabul edilmemelidir. Böyle bir durumda kullanıma ara vererek uygulama merkezinden kontrol talep edin.",
+        ],
+      },
+      {
+        id: "afo-ayakkabi-secimi",
+        heading: "AFO ile Hangi Ayakkabı Kullanılmalıdır?",
+        level: 2,
+        content: [
+          "AFO'nun işlevi uygun ayakkabı seçimiyle yakından ilişkilidir. Genellikle geniş ağızlı, bağcıklı veya cırt cırtlı, tabanı dengeli ve iç tabanı çıkarılabilen ayakkabılar kullanım kolaylığı sağlar.",
+          "Dar, yüksek topuklu veya ayağı yeterince kavramayan ayakkabılar AFO'nun yerleşimini bozabilir. Ayakkabının satın alınmadan önce mümkünse AFO ile birlikte denenmesi önerilir.",
+        ],
+      },
+      {
+        id: "cocuklarda-afo",
+        heading: "Çocuklarda AFO Kullanımı",
+        level: 2,
+        content: [
+          "Çocuklarda AFO; büyüme, gelişim ve aktivite düzeyi dikkate alınarak planlanmalıdır. Ayak parmaklarının ortezin ucunu geçmesi, bilek çevresinde yeni baskı izleri oluşması, çocuğun yürümek istememesi ya da yeni rahatsızlıkların başlaması kontrol gerektirebilir.",
+          "AFO'nun fizyoterapi, egzersiz veya hekim tarafından önerilen diğer uygulamaların yerine geçmediği unutulmamalıdır. Erken değerlendirme hakkında ayrıntılı bilgi için [Kütahya'da çocuk ortez tedavisi yazımızı](/blog/kutahyada-cocuklar-icin-ortez-tedavisi-neden-erken-baslamalidir) inceleyebilirsiniz.",
+        ],
+      },
+      {
+        id: "sik-sorulan-sorular",
+        heading: "Kütahya AFO Hakkında Sık Sorulan Sorular",
+        level: 2,
+        content: [
+          "AFO ne işe yarar? Ayak ve ayak bileğini desteklemeye ve hareketlerini kontrol etmeye yardımcı olur; dengeyi, ayak pozisyonunu ve yürüme güvenliğini destekleyebilir.",
+          "AFO düşük ayakta kullanılır mı? Düşük ayakta sık değerlendirilen yardımcı cihazlardan biridir. Ancak neden ve hareket kapasitesi incelenmeden model seçilmemelidir.",
+          "Hazır AFO mu, kişiye özel AFO mu tercih edilmeli? Karar klinik ihtiyaca bağlıdır. Belirgin deformite, özel hareket kontrolü veya uzun süreli kullanımda kişiye özel üretim gerekebilir.",
+          "AFO bütün gün kullanılır mı? Süre kişiye ve reçeteye göre değişir; yeni AFO'ya genellikle kademeli alışılır.",
+          "AFO ağrı yapar mı? Doğru uygulanmış AFO'nun belirgin ağrıya, yaraya veya su toplamasına neden olması beklenmez. Böyle bir durumda uygulama merkeziyle görüşülmelidir.",
+          "Çocuklarda AFO ne sıklıkla kontrol edilmelidir? Sıklık büyüme hızına ve klinik duruma göre belirlenir. Kalıcı kızarıklık, daralma veya yeni yürüme güçlüğünde planlanan tarih beklenmemelidir.",
+        ],
+      },
+      {
+        id: "iletisim",
+        heading: "Kütahya'da AFO Değerlendirmesi İçin Bize Ulaşın",
+        level: 2,
+        content: [
+          "Kütahya Merkez, Tavşanlı, Simav, Gediz ve çevre ilçelerden AFO hakkında bilgi almak isteyenler Arıkan Ortopedi - Ortez & Protez ile iletişime geçebilir.",
+          "Mevcut reçeteniz ve sağlık belgeleriniz incelenerek ölçü, üretim, prova ve takip süreci hakkında bilgi verilir. Her kullanıcı için uygun ortez türü hekim önerisi ve bireysel değerlendirme doğrultusunda belirlenmelidir.",
+          "Randevu ve bilgi için [WhatsApp üzerinden bize ulaşabilir](https://wa.me/905536660343) veya 0274 600 03 43 numaralı telefonu arayabilirsiniz.",
+          "Bu içerik genel bilgilendirme amacı taşır; tanı veya kişisel tedavi önerisi yerine geçmez. AFO kullanımı ve model seçimi için hekiminize ve yetkili sağlık uzmanlarına danışınız.",
+        ],
+      },
+    ],
+  },
+
+  {
     slug: "kutahyada-cocuklar-icin-ortez-tedavisi-neden-erken-baslamalidir",
     title: "Kütahya'da Çocuklar İçin Ortez Tedavisi Neden Erken Başlamalıdır?",
     excerpt: "Çocuklarda ortez tedavisinde erken müdahalenin önemi, gelişim döneminde doğru zamanlama ve ailelere öneriler.",
