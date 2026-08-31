@@ -59,24 +59,24 @@ function ReadingProgress() {
   );
 }
 
-function TableOfContents({ sections, activeId }: { sections: { id: string; heading: string; level: number }[]; activeId: string }) {
+function TableOfContents({ sections, activeId, compact = false }: { sections: { id: string; heading: string; level: number }[]; activeId: string; compact?: boolean }) {
   const h2s = sections.filter((s) => s.level === 2);
   return (
     <nav aria-label="İçindekiler">
-      <p className="text-xs font-black uppercase tracking-widest text-muted-foreground mb-4">İçindekiler</p>
-      <ol className="space-y-1">
+      <p className={`text-xs font-black uppercase tracking-widest text-muted-foreground ${compact ? "mb-2" : "mb-4"}`}>İçindekiler</p>
+      <ol className={compact ? "space-y-0.5" : "space-y-1"}>
         {h2s.map((s, i) => (
           <li key={s.id}>
             <a
               href={`#${s.id}`}
-              className="flex items-start gap-2 text-sm py-1.5 rounded-lg px-2 transition-all duration-150"
+              className={`flex items-start rounded-lg transition-all duration-150 ${compact ? "gap-1.5 px-1.5 py-0.5 text-xs leading-4" : "gap-2 px-2 py-1.5 text-sm"}`}
               style={
                 activeId === s.id
                   ? { color: "#0AADA8", fontWeight: 700, background: "rgba(10,173,168,0.08)" }
                   : { color: "#555", fontWeight: 500 }
               }
             >
-              <span className="shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-black mt-0.5"
+              <span className={`shrink-0 rounded-full flex items-center justify-center font-black mt-0.5 ${compact ? "w-4 h-4 text-[9px]" : "w-5 h-5 text-[10px]"}`}
                 style={{ background: activeId === s.id ? "#0AADA8" : "#e5e7eb", color: activeId === s.id ? "#fff" : "#555" }}>
                 {i + 1}
               </span>
@@ -329,16 +329,16 @@ export default function BlogPostPage() {
           </article>
 
           {/* Sticky sidebar TOC */}
-          <aside className="hidden lg:block">
-            <div className="sticky top-24 space-y-6">
-              <div className="bg-white border border-border rounded-2xl p-6 shadow-sm">
-                <TableOfContents sections={tocItems} activeId={activeId} />
+          <aside className="hidden lg:block self-start sticky top-24">
+            <div className="space-y-3">
+              <div className="bg-white border border-border rounded-2xl p-4 shadow-sm">
+                <TableOfContents sections={tocItems} activeId={activeId} compact />
               </div>
 
               {/* Sidebar CTA */}
-              <div className="rounded-2xl p-6 text-white text-center" style={{ background: "linear-gradient(135deg, #123B6D 0%, #0AADA8 100%)" }}>
+              <div className="rounded-2xl p-4 text-white text-center" style={{ background: "linear-gradient(135deg, #123B6D 0%, #0AADA8 100%)" }}>
                 <p className="font-extrabold text-base mb-1" style={{ fontFamily: "Manrope, sans-serif" }}>Ücretsiz Değerlendirme</p>
-                <p className="text-xs mb-4" style={{ color: "rgba(255,255,255,0.78)" }}>Kütahya merkezimizde uzmanlarımızla görüşün.</p>
+                <p className="text-xs mb-3" style={{ color: "rgba(255,255,255,0.78)" }}>Kütahya merkezimizde uzmanlarımızla görüşün.</p>
                 <a href="https://wa.me/905536660343" target="_blank" rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 bg-white font-bold text-sm px-4 py-2.5 rounded-xl hover:-translate-y-0.5 transition-transform mb-2 w-full"
                   style={{ color: "#123B6D" }}>
@@ -351,8 +351,8 @@ export default function BlogPostPage() {
               </div>
 
               {/* Tags */}
-              <div className="bg-white border border-border rounded-2xl p-5">
-                <p className="text-xs font-black uppercase tracking-widest text-muted-foreground mb-3">Etiketler</p>
+              <div className="bg-white border border-border rounded-2xl p-4">
+                <p className="text-xs font-black uppercase tracking-widest text-muted-foreground mb-2">Etiketler</p>
                 <div className="flex flex-wrap gap-2">
                   {post.tags.map((tag) => (
                     <span key={tag} className="text-xs font-bold px-2.5 py-1 rounded-full"
