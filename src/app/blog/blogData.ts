@@ -19,13 +19,422 @@ export type BlogPost = {
   metaDescription: string;
   keywords: string[];
   featured?: boolean;
+  featuredOrder?: number;
   coverColor: string;
   coverImage: string;
 };
 
 export const BLOG_POSTS: BlogPost[] = [
+{
+  "slug": "kutahya-ilk-bacak-protezine-alisma-sureci",
+    featured: true,
+    featuredOrder: 0,
+  "title": "Kütahya’da İlk Bacak Protezine Alışma: Prova ve Yürüyüş Süreci",
+  "excerpt": "İlk bacak protezine alışma sürecinde prova, soket uyumu, yürüyüş eğitimi ve kontrol randevuları hakkında Kütahya için bilgilendirici rehber.",
+  "category": "Protez",
+  "tags": [
+    "ilk bacak protezi",
+    "proteze alışma süreci",
+    "Kütahya bacak protezi",
+    "protez yürüyüş eğitimi"
+  ],
+  "readingTime": 2,
+  "publishedAt": "2026-10-26",
+  "author": "Arıkan Ortopedi - Ortez & Protez Uzman Ekibi",
+  "metaDescription": "İlk bacak protezine alışma sürecinde prova, soket uyumu, yürüyüş eğitimi ve kontrol randevuları hakkında Kütahya için bilgilendirici rehber.",
+  "keywords": [
+    "ilk bacak protezi",
+    "proteze alışma süreci",
+    "Kütahya bacak protezi",
+    "protez yürüyüş eğitimi"
+  ],
+  "coverColor": "#123B6D",
+  "coverImage": "/hero-prosthetic.jpg",
+  "sections": [
+    {
+      "id": "ilk-degerlendirme",
+      "heading": "İlk Bacak Protezi Öncesinde Neler Değerlendirilir?",
+      "level": 2,
+      "content": [
+        "İlk bacak protezine alışmak, cihazın tesliminden daha geniş bir süreçtir. Amputasyon seviyesi, kalan uzvun durumu, genel sağlık, denge ve günlük yaşam hedefleri birlikte ele alınır. Ev içinde hareket etmek ile uzun mesafe yürümek farklı ihtiyaçlar oluşturabilir; hedeflerinizi ilk görüşmede açıkça anlatmanız planlamayı kolaylaştırır.",
+        "Protez uygulamasına ne zaman başlanacağına sağlık ekibi karar verir. Başka bir kullanıcının takvimini kendinize ölçüt almak yerine yara iyileşmesi ve rehabilitasyon değerlendirmesi doğrultusunda ilerlemek gerekir. Seçenekler için [alt ekstremite protezi rehberimizi](/blog/kutahyada-alt-ekstremite-protezi-yaptirmayi-dusunenler-icin-rehber) inceleyebilirsiniz."
+      ]
+    },
+    {
+      "id": "prova",
+      "heading": "Prova ve Soket Uyumu Neden Önemlidir?",
+      "level": 2,
+      "content": [
+        "Soket, kalan uzuv ile protez arasındaki bağlantıyı sağlar. Provada yalnızca protezin boyu değil, soketin oturuşu, basıncın dağılımı ve hareket sırasında hissedilen güven değerlendirilir. Rahatsızlığın tam yerini ve hangi hareketle oluştuğunu tarif etmek, düzenlemelerin daha doğru yapılmasına yardımcı olur.",
+        "İlk denemede her şeyin kusursuz hissettirmesi beklenmemelidir; buna karşılık ağrıya katlanmak da uyum sürecinin hedefi değildir. Belirgin ağrı, sürtünme ya da cilt hasarında kullanımı sürdürmeden ekibinizle görüşün. Soketi kendiniz kesmeyin veya bağlantı ayarlarını değiştirmeyin."
+      ]
+    },
+    {
+      "id": "yuruyus",
+      "heading": "Yürüyüş Eğitiminde Nasıl İlerlenir?",
+      "level": 2,
+      "content": [
+        "Fizyoterapist, değerlendirmeye göre ayağa kalkma, ağırlık aktarma, denge ve adım çalışmalarını planlar. Yardımcı yürüme cihazının gerekip gerekmediği de kişiye göre belirlenir. Merdiven, eğim ve dış ortam çalışmaları için güvenli düzeye ulaşmak gerekir.",
+        "Günlük kullanım süresi ve dinlenme aralıkları kişisel programla belirlenmelidir. İlk günlerde uzun yürüyüş hedeflemek yerine verilen hareketleri güvenli biçimde uygulamaya odaklanın. Egzersizlerin amacı ve sınırları için [protezle aktif yaşam yazımızı](/blog/protez-kullanicilari-icin-spor-ve-aktif-yasam) okuyabilirsiniz."
+      ]
+    },
+    {
+      "id": "takip",
+      "heading": "Kontrole Giderken Hangi Bilgileri Kaydetmelisiniz?",
+      "level": 2,
+      "content": [
+        "Hangi ayakkabıyla yürüdüğünüzü, kullanım süresini ve rahatsızlığın ne zaman başladığını not edin. Soketin gün içinde gevşemesi veya sıkılaşması gibi değişiklikleri de bildirin. Takip sıklığı herkes için aynı değildir; belirgin uyum sorunu varsa planlanan kontrol tarihini beklemeyin."
+      ]
+    },
+    {
+      "id": "sorular",
+      "heading": "İlk Protez Kullanımı Hakkında Sık Sorulan Sorular",
+      "level": 2,
+      "content": [
+        "Proteze kaç günde alışılır? Herkes için geçerli bir süre yoktur. Amputasyon seviyesi, fiziksel kapasite, soket uyumu ve rehabilitasyon süreci bu süreyi etkiler.",
+        "İlk protezle hemen dışarı çıkılır mı? Dış ortam yürüyüşü için denge ve güvenli hareket becerileri değerlendirilmelidir. Kararı rehabilitasyon ekibinizle birlikte verin."
+      ]
+    },
+    {
+      "id": "bilgi",
+      "heading": "Kütahya’da Protez Provası İçin Bilgi Alın",
+      "level": 2,
+      "content": [
+        "Arıkan Ortopedi ile [iletişime geçerek](/#iletisim) mevcut reçeteniz, kullandığınız cihaz ve günlük yaşam hedefleriniz üzerinden prova ve takip süreci hakkında bilgi alabilirsiniz.",
+        "Kaynak: [NHS amputasyon ve rehabilitasyon bilgileri](https://www.nhs.uk/tests-and-treatments/amputation/). Bu yazı genel bilgilendirmedir; kişisel tedavi ve kullanım programı sağlık ekibiniz tarafından belirlenir."
+      ]
+    }
+  ]
+},
+{
+  "slug": "bacak-protezinde-guduk-soket-liner-bakimi",
+    featured: true,
+    featuredOrder: 2,
+  "title": "Bacak Protezinde Güdük, Soket ve Liner Bakımı Nasıl Yapılır?",
+  "excerpt": "Bacak protezinde güdük cildi, soket ve liner bakımı; günlük kontrol, temizlik ve uyum sorunlarında izlenecek adımlar için pratik rehber.",
+  "category": "Protez",
+  "tags": [
+    "protez bakımı",
+    "güdük bakımı",
+    "soket uyumu",
+    "protez liner temizliği"
+  ],
+  "readingTime": 2,
+  "publishedAt": "2026-10-19",
+  "author": "Arıkan Ortopedi - Ortez & Protez Uzman Ekibi",
+  "metaDescription": "Bacak protezinde güdük cildi, soket ve liner bakımı; günlük kontrol, temizlik ve uyum sorunlarında izlenecek adımlar için pratik rehber.",
+  "keywords": [
+    "protez bakımı",
+    "güdük bakımı",
+    "soket uyumu",
+    "protez liner temizliği"
+  ],
+  "coverColor": "#123B6D",
+  "coverImage": "/protez-soket-liner-bakimi.jpg",
+  "sections": [
+    {
+      "id": "bakim",
+      "heading": "Protez Bakımında Üç Ayrı Alan",
+      "level": 2,
+      "content": [
+        "Bacak protezinin bakımı yalnızca dış yüzeyini silmek değildir. Kalan uzvun cildi, soketin iç yüzeyi ve kullanılıyorsa liner ayrı ayrı değerlendirilmelidir. Liner, cilt ile soket arasında kullanılan ara yüzdür; her protez aynı liner veya bağlantı sistemine sahip değildir.",
+        "Bakım talimatlarını teslim sırasında yazılı istemek yararlıdır. Malzeme ve mekanizma değiştiğinde temizlik yöntemi de değişebilir. Üreticinin talimatı ve uygulama ekibinin önerisi, internetteki genel tariflerden önce gelir."
+      ]
+    },
+    {
+      "id": "cilt",
+      "heading": "Güdük Cildini Günlük Kontrol Etmek",
+      "level": 2,
+      "content": [
+        "Protez çıkarıldığında ciltte yeni kızarıklık, sürtünme veya yara olup olmadığını inceleyin. Görmekte zorlandığınız alanlar için ayna kullanılabilir. Cildi temiz tutun ve protezi yeniden takmadan önce iyice kurulayın. Kullanacağınız cilt ürünlerini sağlık ekibinizle görüşün.",
+        "Uzun süren kızarıklık, su toplaması veya açık yara varsa protezi zorlayarak kullanmayın; değerlendirme isteyin. Akıntı, yayılan kızarıklık ya da ateş gibi enfeksiyonu düşündüren belirtilerde sağlık kuruluşuna başvurun. Duyu kaybı olan kişiler yalnızca ağrıya güvenmemelidir."
+      ]
+    },
+    {
+      "id": "liner",
+      "heading": "Liner ve Soket Temizliğinde Nelere Dikkat Edilir?",
+      "level": 2,
+      "content": [
+        "Liner için önerilen ürün, yıkama yöntemi ve kurutma koşullarını üretici talimatından kontrol edin. Uygunluğu belirtilmemiş kimyasal, aşındırıcı veya yüksek ısı kullanmayın. Temizlikten sonra çatlak, yırtık ve yüzey bozulması olup olmadığını inceleyin.",
+        "Soketin temizliği sırasında elektronik ve mekanik parçalara su kaçırmamak gerekir. Cihazınızın suya dayanımını varsaymayın. Gevşeyen parça, olağandışı ses veya kilitlenme sorunu varsa teknik kontrol yaptırın; bağlantıları kendiniz sökmeyin."
+      ]
+    },
+    {
+      "id": "uyum",
+      "heading": "Soket Uyumu Değişirse Ne Yapılmalı?",
+      "level": 2,
+      "content": [
+        "Günlük kullanımda soketin alışılmıştan farklı hissettirmesi kontrol gerektirebilir. Yeni baskı noktası, dönme veya gevşeme varsa ne zaman oluştuğunu not edin. Dolgu eklemek veya çorap katmanını değiştirmek gibi uygulamaları yalnızca size öğretilen plan kapsamında yapın.",
+        "Yeni protez kullanıyorsanız [ilk proteze alışma rehberi](/blog/kutahya-ilk-bacak-protezine-alisma-sureci), prova ve takipte hangi bilgileri paylaşabileceğinizi açıklar."
+      ]
+    },
+    {
+      "id": "sorular",
+      "heading": "Protez Bakımı Hakkında Sık Sorulan Sorular",
+      "level": 2,
+      "content": [
+        "Her liner aynı ürünle yıkanır mı? Hayır. Malzeme ve üreticiye göre talimat değişebilir; cihazınıza ait yönergeyi izleyin.",
+        "Protezle duş alınır mı? Ancak ilgili modelin kullanım koşulları buna izin veriyorsa değerlendirilebilir. Genel bir suya dayanıklılık kabulüyle hareket etmeyin."
+      ]
+    },
+    {
+      "id": "iletisim",
+      "heading": "Kütahya’da Protez Bakımı ve Kontrol",
+      "level": 2,
+      "content": [
+        "Uyum ve bakım sorularınız için [Arıkan Ortopedi’ye ulaşabilirsiniz](/#iletisim). Görüşmeye protezinizi ve varsa ürün kullanım kılavuzunu getirmeniz, cihazınıza uygun bilgi alınmasını kolaylaştırır.",
+        "Kaynak: [Leeds Teaching Hospitals güdük bakımı rehberi](https://flipbooks.leedsth.nhs.uk/LN002621.pdf). İçerik genel bilgi amaçlıdır; kişisel bakım planınız için sağlık ekibinize danışın."
+      ]
+    }
+  ]
+},
+{
+  "slug": "afo-ile-ayakkabi-secimi-kutahya",
+  "title": "AFO ile Ayakkabı Seçimi: Uyum, Numara ve Prova Rehberi",
+  "excerpt": "AFO ile uyumlu ayakkabı nasıl seçilir? Numara, iç hacim, kapanış sistemi ve prova sırasında kontrol edilecek noktalar hakkında rehber.",
+  "category": "Ortez",
+  "tags": [
+    "AFO ayakkabı seçimi",
+    "ortez ayakkabı uyumu",
+    "Kütahya AFO",
+    "ayak bileği ortezi"
+  ],
+  "readingTime": 2,
+  "publishedAt": "2026-10-12",
+  "author": "Arıkan Ortopedi - Ortez & Protez Uzman Ekibi",
+  "metaDescription": "AFO ile uyumlu ayakkabı nasıl seçilir? Numara, iç hacim, kapanış sistemi ve prova sırasında kontrol edilecek noktalar hakkında rehber.",
+  "keywords": [
+    "AFO ayakkabı seçimi",
+    "ortez ayakkabı uyumu",
+    "Kütahya AFO",
+    "ayak bileği ortezi"
+  ],
+  "coverColor": "#0AADA8",
+  "coverImage": "/kutahya-afo-ayak-bilegi-ortezi.png",
+  "sections": [
+    {
+      "id": "uyum",
+      "heading": "AFO ve Ayakkabı Birlikte Değerlendirilmelidir",
+      "level": 2,
+      "content": [
+        "AFO, ayak ve ayak bileğini destekleyen bir ortezdir. Ayakkabının içine yerleşen bölüm ek hacim gerektirdiği için günlük ayakkabınız yeni cihazınızla uyum sağlamayabilir. Ayakkabı seçimi, ortezin planlanan şekilde kullanılabilmesinin bir parçasıdır.",
+        "Her AFO aynı sertlikte veya hacimde değildir. Ayakkabı önerisi, kullandığınız model ve hekim tarafından belirlenen hareket kontrolüyle birlikte ele alınmalıdır. Temel bilgiler için [Kütahya AFO rehberimize](/blog/kutahya-afo-kisiye-ozel-ayak-ayak-bilegi-ortezi-rehberi) göz atabilirsiniz."
+      ]
+    },
+    {
+      "id": "hacim",
+      "heading": "Yalnızca Büyük Numara Almak Yeterli mi?",
+      "level": 2,
+      "content": [
+        "Uzunluk kadar genişlik, derinlik ve açılıp kapanma kolaylığı da önemlidir. Sırf AFO sığsın diye gereğinden uzun bir ayakkabı almak yürümeyi zorlaştırabilir. Ayak, ortez ve ayakkabıyı birlikte deneyerek karar verin.",
+        "Geniş açılan, bağcık veya cırt cırtla sabitlenen modeller uygulamayı kolaylaştırabilir. Çıkarılabilir iç taban ek alan sağlayabilir; bunun cihazınız için uygunluğunu uygulama ekibinize sorun. Ortezi sığdırmak için kesmeyin veya ısıtarak değiştirmeyin."
+      ]
+    },
+    {
+      "id": "prova",
+      "heading": "Ayakkabı Provasında Kontrol Edilecek Noktalar",
+      "level": 2,
+      "content": [
+        "Provaya AFO’nuzu ve kullanmanız önerilen çorabı götürün. Topuğun ortezdeki yerine oturduğunu, kayışların kapanabildiğini ve ayakkabının ayağı aşırı sıkıştırmadığını kontrol ettirin. Oturarak rahat gelen bir modelin ayakta ve yürürken de denenmesi gerekir.",
+        "Topuk yüksekliği ve taban yapısı yürüyüşü etkileyebilir. Belirgin biçimde farklı ayakkabıya geçmeden önce ekibinizden görüş alın. Tek taraflı AFO kullanımında iki ayağın birlikte değerlendirilmesi ve yürüyüşün kontrol edilmesi önemlidir."
+      ]
+    },
+    {
+      "id": "cilt",
+      "heading": "Yeni Ayakkabıyla Cilt Kontrolü",
+      "level": 2,
+      "content": [
+        "İlk kullanımlardan sonra parmakları, topuk çevresini ve kayışların temas alanlarını inceleyin. Ağrı, kalıcı kızarıklık veya su toplaması olduğunda kullanımı zorlamayın; uyum değerlendirmesi isteyin. Yeni ayakkabının açılmasını beklemek, belirgin baskının çözümü değildir.",
+        "Çocuklarda büyüme nedeniyle daha önce uygun olan ayakkabı ve ortez dar gelebilir. Yeni şikâyetleri yalnızca ayakkabı numarasıyla açıklamadan cihazın da kontrol edilmesini sağlayın. [Çocuklarda ortez kullanımı rehberi](/blog/cocuklarda-ortez-kullanimi-ne-zaman-gerekli) bu süreç hakkında ek bilgi sunar."
+      ]
+    },
+    {
+      "id": "sorular",
+      "heading": "AFO Ayakkabısı Hakkında Sık Sorulan Sorular",
+      "level": 2,
+      "content": [
+        "AFO için kaç numara büyük ayakkabı gerekir? Sabit bir numara farkı yoktur; uygunluk ortezle yapılan provayla belirlenir.",
+        "Her spor ayakkabı uygun mudur? Hayır. Modelin iç hacmi, kapanış sistemi ve taban özellikleri birlikte kontrol edilmelidir."
+      ]
+    },
+    {
+      "id": "iletisim",
+      "heading": "Kütahya’da AFO ve Ayakkabı Uyumu İçin Destek",
+      "level": 2,
+      "content": [
+        "Ayakkabı satın almadan önce [Arıkan Ortopedi ile görüşerek](/#iletisim) cihazınızla prova hakkında bilgi alabilirsiniz. Mevcut ayakkabınızı getirmeniz karşılaştırmayı kolaylaştırır.",
+        "Kaynak: [North Tees and Hartlepool NHS AFO hasta rehberi](https://www.nth.nhs.uk/resources/ankle-foot-orthosis/). Bu içerik genel bilgilendirmedir; bireysel cihaz ve kullanım önerileri uzman değerlendirmesi gerektirir."
+      ]
+    }
+  ]
+},
+{
+  "slug": "ortopedik-tabanliga-alisma-ve-ayakkabi-uyumu",
+    featured: true,
+    featuredOrder: 4,
+  "title": "Ortopedik Tabanlığa Alışma Süreci ve Doğru Ayakkabı Uyumu",
+  "excerpt": "Yeni ortopedik tabanlığa alışırken kullanım süresi, ayakkabı uyumu, temizlik ve kontrol gerektiren belirtiler hakkında bilgilendirici rehber.",
+  "category": "Tabanlık",
+  "tags": [
+    "ortopedik tabanlığa alışma",
+    "kişiye özel tabanlık",
+    "tabanlık ayakkabı uyumu",
+    "Kütahya tabanlık"
+  ],
+  "readingTime": 2,
+  "publishedAt": "2026-10-05",
+  "author": "Arıkan Ortopedi - Ortez & Protez Uzman Ekibi",
+  "metaDescription": "Yeni ortopedik tabanlığa alışırken kullanım süresi, ayakkabı uyumu, temizlik ve kontrol gerektiren belirtiler hakkında bilgilendirici rehber.",
+  "keywords": [
+    "ortopedik tabanlığa alışma",
+    "kişiye özel tabanlık",
+    "tabanlık ayakkabı uyumu",
+    "Kütahya tabanlık"
+  ],
+  "coverColor": "#0AADA8",
+  "coverImage": "/footbalance-tabanlik.webp",
+  "sections": [
+    {
+      "id": "baslangic",
+      "heading": "Yeni Tabanlık Kullanımında İlk Adım",
+      "level": 2,
+      "content": [
+        "Kişiye özel ortopedik tabanlık, ayakkabının içinde ayağı desteklemek amacıyla planlanır. Yeni bir tabanlıkla yürümek alışılmıştan farklı hissedilebilir. İlk günden uzun süre kullanmak yerine size verilen kademeli kullanım planını izlemek gerekir.",
+        "Tabanlığın hedefi ve kullanım alanı değerlendirmeye göre değişir. Her ayak ağrısı aynı nedene bağlı olmadığı için başka bir kişinin tabanlığını veya kullanım programını örnek almayın. Ürün yaklaşımını tanımak için [FootBalance tabanlık yazımızı](/blog/footbalance-ortopedik-tabanlik-kimlere-uygun) okuyabilirsiniz."
+      ]
+    },
+    {
+      "id": "sure",
+      "heading": "Tabanlık Günde Kaç Saat Kullanılmalı?",
+      "level": 2,
+      "content": [
+        "Kullanım süresini değerlendirmeyi yapan uzman belirlemelidir. Başlangıçta kısa sürelerle deneme ve toleransa göre artırma önerilebilir; ancak herkes için aynı gün ve saat çizelgesi uygun değildir. İşte ayakta kalma sürenizi ve spor alışkanlıklarınızı görüşmede anlatın.",
+        "Yeni başlayan veya artan ağrıyı uyumun kaçınılmaz parçası saymayın. Belirgin rahatsızlık, ciltte yara veya kalıcı baskı izi varsa kullanıma ara verip kontrol isteyin. Duyu kaybınız ya da dolaşım sorununuz varsa kullanım planı ayrıca değerlendirilmelidir."
+      ]
+    },
+    {
+      "id": "ayakkabi",
+      "heading": "Tabanlık Hangi Ayakkabıya Uyar?",
+      "level": 2,
+      "content": [
+        "Ayak ve tabanlık için yeterli iç hacim, güvenli kapanış ve dengeli yerleşim aranır. Tabanlık ayakkabıda kıvrılmadan durmalı, parmakları sıkıştırmamalıdır. Çıkarılabilir iç tabanı olan ayakkabılar uyumu kolaylaştırabilir.",
+        "Tabanlığı mevcut iç tabanın üstüne koymanın uygun olup olmadığını sorun. Farklı ayakkabıya geçerken yeniden kontrol edin; bir modelde rahat olan tabanlık dar bir modelde aynı sonucu vermeyebilir. Tabanlığı kendi kararınızla kesmeyin veya üzerine ek parça yapıştırmayın."
+      ]
+    },
+    {
+      "id": "bakim",
+      "heading": "Temizlik ve Aşınma Kontrolü",
+      "level": 2,
+      "content": [
+        "Temizlik ürünü ve kurutma yöntemi malzemeye göre değişir. Size verilen talimatı izleyin; yüksek ısı veya uygunluğu belirtilmemiş kimyasallar kullanmayın. Tabanlığın yüzeyini, kenarlarını ve ayakkabıda düz durup durmadığını düzenli inceleyin.",
+        "Yenileme zamanı için herkese uygun sabit bir ay sayısı yoktur. Kullanım yoğunluğu, malzeme durumu ve şikâyetlerdeki değişim birlikte değerlendirilir. Belirgin aşınma ya da yeni rahatsızlık olduğunda kontrol talep edin."
+      ]
+    },
+    {
+      "id": "sorular",
+      "heading": "Tabanlık Kullanımı Hakkında Sık Sorulan Sorular",
+      "level": 2,
+      "content": [
+        "Tabanlıkla hemen spora başlanır mı? Spor türü ve yüklenme düzeyini uzmana bildirin; günlük kullanıma alışma ile spor kullanımı ayrı planlanabilir.",
+        "Tabanlık bütün ayak ağrılarını giderir mi? Böyle bir garanti verilemez. Gerekli görülürse hekim değerlendirmesi, egzersiz ve başka yaklaşımlar birlikte ele alınır."
+      ]
+    },
+    {
+      "id": "iletisim",
+      "heading": "Kütahya’da Tabanlık Uyumu İçin Değerlendirme",
+      "level": 2,
+      "content": [
+        "[Arıkan Ortopedi’ye başvururken](/#iletisim) günlük ayakkabınızı, tabanlığınızı ve varsa reçetenizi getirin. Hangi faaliyet sırasında rahatsız olduğunuzu not etmeniz değerlendirmeye yardımcı olur.",
+        "Kaynaklar: [Rotherham NHS tabanlık kullanım bilgileri](https://www.therotherhamft.nhs.uk/patients-and-visitors/patient-information/orthotic-insoles) ve [Royal National Orthopaedic Hospital tabanlık rehberi](https://www.rnoh.nhs.uk/patients-and-visitors/patient-information-guides/foot-orthosis-patients-guide). Bu içerik kişisel tedavi önerisi yerine geçmez."
+      ]
+    }
+  ]
+},
+{
+  "slug": "kutahya-ortez-protez-ilk-randevu-hazirligi",
+  "title": "Kütahya Ortez Protez Randevusu: İlk Görüşmeye Hazırlık Rehberi",
+  "excerpt": "Kütahya’da ilk ortez protez randevusuna hazırlık: mevcut belgeler, günlük yaşam hedefleri, ölçü ve prova hakkında sorulacak sorular.",
+  "category": "Rehabilitasyon",
+  "tags": [
+    "Kütahya ortez protez randevu",
+    "ortez protez değerlendirme",
+    "protez ilk muayene",
+    "ortez ölçü ve prova"
+  ],
+  "readingTime": 2,
+  "publishedAt": "2026-09-28",
+  "author": "Arıkan Ortopedi - Ortez & Protez Uzman Ekibi",
+  "metaDescription": "Kütahya’da ilk ortez protez randevusuna hazırlık: mevcut belgeler, günlük yaşam hedefleri, ölçü ve prova hakkında sorulacak sorular.",
+  "keywords": [
+    "Kütahya ortez protez randevu",
+    "ortez protez değerlendirme",
+    "protez ilk muayene",
+    "ortez ölçü ve prova"
+  ],
+  "coverColor": "#0AADA8",
+  "coverImage": "/hero-foot-analysis.jpg",
+  "sections": [
+    {
+      "id": "hazirlik",
+      "heading": "İlk Ortez Protez Görüşmesinin Amacı",
+      "level": 2,
+      "content": [
+        "Ortez veya protez için ilk görüşme, ihtiyaçların anlaşılması ve sonraki adımların planlanması için yapılır. Ortez vücuttaki bir bölgeyi desteklerken protez eksik uzvun işlevine yardımcı olmak üzere tasarlanır. Hangi uygulamanın uygun olduğu reçete, klinik değerlendirme ve günlük gereksinimlere bağlıdır.",
+        "Kütahya’da merkez ararken yalnızca cihazın adına odaklanmayın. Ölçü, prova, kullanım eğitimi ve takip sürecinin nasıl yürütüldüğünü de öğrenin. [Merkez seçimi rehberimiz](/blog/kutahyada-ortez-protez-merkezi-secerken-nelere-dikkat-etmelisiniz) bu konuda sorabileceğiniz başlıkları açıklar."
+      ]
+    },
+    {
+      "id": "belgeler",
+      "heading": "Randevuya Hangi Belgeler ve Eşyalar Getirilmeli?",
+      "level": 2,
+      "content": [
+        "Varsa hekim reçetenizi, ilgili raporlarınızı ve önceki cihaz bilgilerinizi hazırlayın. Merkezden gelmeden önce hangi belgelerin gerekli olduğunu öğrenin. Bu hazırlık listesi, resmi başvuru veya geri ödeme için zorunlu evrak listesi anlamına gelmez.",
+        "Kullanmakta olduğunuz ortez, protez veya tabanlığı ve günlük ayakkabınızı da getirin. Yürüme yardımcısı kullanıyorsanız bunu bildirin. Ölçü alınacak bölgeye erişimi kolaylaştıran rahat kıyafet, görüşme sırasında pratiklik sağlayabilir."
+      ]
+    },
+    {
+      "id": "hedefler",
+      "heading": "Günlük Yaşam Hedeflerinizi Nasıl Anlatabilirsiniz?",
+      "level": 2,
+      "content": [
+        "Ev içindeki hareketler, işe gidiş, merdivenler, ayakta kalma süresi ve spor beklentileri farklı ihtiyaçlar oluşturur. En çok zorlandığınız üç etkinliği önceden yazın. Önceki cihazınız varsa sevdiğiniz ve rahatsız olduğunuz özellikleri somut örneklerle anlatın.",
+        "Ağrı veya baskı yaşıyorsanız yerini, başlangıç zamanını ve hangi hareketle arttığını not edin. Düşme, takılma ya da denge sorunu yaşamanız da görüşmede paylaşılmalıdır. Sağlık durumunuzla ilgili değişiklikleri gizlemeden aktarmak değerlendirmeyi kolaylaştırır."
+      ]
+    },
+    {
+      "id": "sorular",
+      "heading": "Ölçü, Üretim ve Prova İçin Sorulacak Sorular",
+      "level": 2,
+      "content": [
+        "Önerilen cihazın hangi ihtiyaca yönelik olduğunu, alternatiflerin nasıl değerlendirildiğini ve ölçünün hangi yöntemle alınacağını sorun. Üretim ve teslim süresinin cihaz türüne ve prova gereksinimine göre değişebileceğini göz önünde bulundurun.",
+        "Teslimde takma ve çıkarma, temizlik, cilt kontrolü ve günlük kullanım eğitiminin nasıl verileceğini öğrenin. Kontrol randevularını, ayar gerektiğinde kime ulaşacağınızı ve garanti koşullarını yazılı istemeniz yararlıdır."
+      ]
+    },
+    {
+      "id": "ucret",
+      "heading": "Ücret ve SGK Süreci Hakkında Ne Sorulmalı?",
+      "level": 2,
+      "content": [
+        "Fiyat teklifinin hangi parçaları ve hizmetleri kapsadığını, prova ve sonraki ayarların koşullarını netleştirin. Geri ödeme uygunluğu kişiye, ürüne ve güncel kurallara göre ayrıca doğrulanmalıdır; bu yazı belirli bir ödeme veya karşılama sözü vermez.",
+        "Başvuru adımlarını tanımak için [SGK ile ortez protez alma rehberini](/blog/sgk-ile-ortez-protez-nasil-alinir-adim-adim-rehber) inceleyebilir, kendi işleminiz için güncel gereklilikleri ilgili kurum ve merkezden öğrenebilirsiniz."
+      ]
+    },
+    {
+      "id": "randevu",
+      "heading": "Kütahya’da İlk Görüşme İçin İletişim",
+      "level": 2,
+      "content": [
+        "Arıkan Ortopedi ile [iletişim bölümünden](/#iletisim) görüşerek randevu ve hazırlık hakkında bilgi alabilirsiniz. Mevcut cihazınızı ve temel ihtiyaçlarınızı önceden belirtmeniz görüşmenin planlanmasına yardımcı olur.",
+        "İlk randevuda cihaz teslim edilir mi? Her uygulama için böyle bir beklenti uygun değildir. Değerlendirme, ölçü, üretim ve prova adımlarının hangilerinin gerekli olduğu görüşmede belirlenir. Bu içerik genel süreç bilgisidir; tıbbi kararlar hekim ve ilgili sağlık ekibiyle alınır."
+      ]
+    }
+  ]
+},
+
   {
     slug: "kutahya-afo-kisiye-ozel-ayak-ayak-bilegi-ortezi-rehberi",
+    featured: true,
+    featuredOrder: 1,
     title: "Kütahya AFO: Kişiye Özel Ayak ve Ayak Bileği Ortezi Rehberi",
     excerpt: "AFO çeşitleri, kişiye özel üretim süreci, kullanım önerileri ve çocuklarda AFO takibi hakkında kapsamlı rehber.",
     category: "Ortez",
@@ -35,7 +444,6 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Arıkan Ortopedi - Ortez & Protez Uzman Ekibi",
     metaDescription: "Kütahya'da kişiye özel AFO rehberi: AFO çeşitleri, kimlere uygulanır, ölçü ve üretim süreci, ayakkabı seçimi ve kullanım önerileri.",
     keywords: ["kütahya afo", "kişiye özel afo", "ayak bileği ortezi", "düşük ayak ortezi", "çocuk afo kütahya"],
-    featured: true,
     coverColor: "#0AADA8",
     coverImage: "/kutahya-afo-ayak-bilegi-ortezi.png",
     sections: [
@@ -159,7 +567,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Arıkan Ortopedi - Ortez & Protez Uzman Ekibi",
     metaDescription: "Kütahya'da çocuklar için ortez tedavisi neden erken başlamalıdır? Gelişim dönemi, doğru zamanlama ve ailelere öneriler.",
     keywords: ["çocuk ortezi kütahya", "pediatrik ortez kütahya", "çocuk ortez tedavisi", "afo çocuk kütahya"],
-    featured: true,
+    featured: false,
     coverColor: "#0AADA8",
     coverImage: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80&auto=format&fit=crop",
     sections: [
@@ -384,7 +792,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Arıkan Ortopedi - Ortez & Protez Uzman Ekibi",
     metaDescription: "Kütahya'da SGK anlaşmalı protez ve ortez hizmeti nasıl alınır? Evraklar, başvuru süreci, teslim ve karşılanan ürünler.",
     keywords: ["sgk protez kütahya", "sgk ortez kütahya", "kütahya sgk protez merkezi", "sgk anlaşmalı ortez protez"],
-    featured: true,
+    featured: false,
     coverColor: "#123B6D",
     coverImage: "https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?w=1200&q=80&auto=format&fit=crop",
     sections: [
@@ -549,7 +957,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Arıkan Ortopedi - Ortez & Protez Uzman Ekibi",
     metaDescription: "Kütahya'da SGK kapsamında ortez ve protez nasıl alınır? Başvuru belgesi, hekim raporu ve raporlama süreci hakkında eksiksiz rehber.",
     keywords: ["kütahya ortez protez", "sgk ortez protez", "kütahya protez merkezi", "sgk protez başvurusu"],
-    featured: true,
+    featured: false,
     coverColor: "#123B6D",
     coverImage: "https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?w=1200&q=80&auto=format&fit=crop",
     sections: [
@@ -750,6 +1158,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "footbalance-ortopedik-tabanlik-kimlere-uygun",
+    featured: true,
+    featuredOrder: 3,
     title: "FootBalance Ortopedik Tabanlık: Kimler İçin Uygundur ve Nasıl Çalışır?",
     excerpt: "FootBalance'ın %100 kişiye özel tabanlık teknolojisi, hangi sorunlara çözüm sunduğu ve Kütahya'da nasıl yaptırabileceğinizi öğrenin.",
     category: "Tabanlık",
@@ -759,7 +1169,6 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Arıkan Ortopedi - Ortez & Protez Uzman Ekibi",
     metaDescription: "FootBalance ortopedik tabanlık nedir, kimlere uygundur? Düz tabanlık, plantar fasiit, diz ve sırt ağrısı için 10 dakikada kişiye özel tabanlık hizmeti.",
     keywords: ["footbalance tabanlık", "ortopedik tabanlık kütahya", "kişiye özel tabanlık", "düz tabanlık tedavisi", "plantar fasiit tabanlık"],
-    featured: true,
     coverColor: "#0AADA8",
     coverImage: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80&auto=format&fit=crop",
     sections: [
@@ -1132,6 +1541,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
   {
     slug: "sgk-ile-ortez-protez-nasil-alinir-adim-adim-rehber",
+    featured: true,
+    featuredOrder: 5,
     title: "SGK ile Ortez Protez Cihazı Nasıl Alınır? Adım Adım Tam Rehber",
     excerpt: "SGK üzerinden ortez veya protez almak için izlenmesi gereken tüm adımlar, gerekli belgeler ve dikkat edilmesi gereken noktalar.",
     category: "SGK & Mevzuat",
@@ -1141,7 +1552,6 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Arıkan Ortopedi - Ortez & Protez Uzman Ekibi",
     metaDescription: "SGK ile ortez ve protez cihazı almak için hangi adımları izlemeniz gerekiyor? Gerekli belgeler, heyet raporu ve fark ücreti konusunda eksiksiz rehber.",
     keywords: ["sgk ortez protez başvuru", "sgk protez nasıl alınır", "sgk cihaz", "ortez protez devlet katkısı", "sut ortez"],
-    featured: true,
     coverColor: "#1a3a1a",
     coverImage: "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=1200&q=80&auto=format&fit=crop",
     sections: [

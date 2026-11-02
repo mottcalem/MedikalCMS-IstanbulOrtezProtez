@@ -26,7 +26,8 @@ export default function BlogPage() {
     return matchCat && matchQ;
   });
 
-  const featured = BLOG_POSTS.filter((p) => p.featured);
+  const featured = BLOG_POSTS.filter((p) => p.featured)
+    .sort((a, b) => (a.featuredOrder ?? 99) - (b.featuredOrder ?? 99));
 
   return (
     <div className="min-h-screen bg-background">
