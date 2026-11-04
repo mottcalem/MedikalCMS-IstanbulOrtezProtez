@@ -657,7 +657,7 @@ function FootBalance() {
           {/* Video */}
           <div className="relative rounded-3xl overflow-hidden shadow-xl bg-black" style={{ minHeight: 280 }}>
             <video
-              src="https://footbalance.com.tr/wp-content/uploads/2026/03/anasayfa-hub.mp4"
+              src="https://footbalance.com.tr/videos/footbalance-hero-20261026.mp4"
               autoPlay
               muted
               loop
